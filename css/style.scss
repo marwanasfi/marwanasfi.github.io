@@ -1,0 +1,395 @@
+
+
+///////////////////////////////////////////////////////////////DOCUMENT STYLE///////////////////////////////////////////////////////////////
+
+html {
+  font-family: $text-font;
+  color: #222;
+  font-size: 80%;
+  line-height: 1.4;
+	position: relative;
+  min-height: 100%;
+}
+body {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+
+}
+.site-wrapper {
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+main {
+flex: 1;
+}
+header{
+	background-color: $pink;
+	width: 100%;
+	height: 100vh;
+  max-height: 100vh;
+	text-align: center;
+}
+
+.menu_home  {
+  font-size: 1.3em ;
+  margin: auto;
+  margin-bottom: 5vh;
+}
+.menu_home .ul {
+    height: auto;
+    padding: 2% 0;
+    margin: 0;
+}
+.menu_home  li {
+display: inline;
+padding: 1%;
+font-weight: lighter;
+}
+ li a{
+cursor: pointer;
+}
+.separator {
+	height: 1%;
+	width: 1%;
+  margin: 0.5% 0;
+}
+
+
+.menu_icon{
+  background-image: url("../img/separator_white.svg");
+  background-repeat: no-repeat;
+  width:50px;
+  height: 50px;
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+}
+  /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+       .menu_icon:before,
+       .menu_icon:after {
+           content:"";
+           display:table;
+       }
+
+       .menu_icon:after {
+           clear:both;
+       }
+
+       /* For IE 6/7 (trigger hasLayout) */
+       .menu_icon {
+           zoom:1;
+       }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration:none;
+  color: $dark-grey;
+}
+.menu_white a {
+	color:white;
+}
+.menu_white a:hover {
+	color:$light-grey;
+}
+article {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+.left_about {
+	@include page($blue);
+
+}
+.right_about {
+	@include page(white);
+
+}
+
+.content {
+  padding-top: 10vh;
+  padding-left: 15vh;
+  padding-right: 10vh;
+  max-height: 80vh;
+  overflow-x:hidden;
+  overflow-y: auto;
+  text-align: left;
+}
+
+span.my_photo {
+display: none;
+}
+.languages {
+  padding-left: 0;
+  list-style: none;
+}
+.left_skills {
+	@include page($light-grey);
+}
+.right_skills {
+	@include page(white);
+}
+.left_work {
+	@include page($yellow);
+}
+.right_work {
+	@include page(white);
+}
+.left_contact {
+	@include page($green);
+}
+.right_contact {
+	@include page(white);
+	text-align: center;
+}
+.menu_black{
+  margin: auto;
+  position: relative;
+  top: 70%;
+  transform: translateY(-70%);
+}
+.menu_black ul{
+    height: auto;
+    padding: 2% 0;
+    margin: 0px;
+}
+.menu_black li{
+display: inline;
+padding: 1%;
+}
+.menu_white {
+	@extend .menu_black;
+	color: white;
+}
+
+h1{
+  background-image:url('../img/big_separator.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 35%;
+  height: 80%;
+  margin: auto;
+	font-family: $title-font;
+  font-weight: normal;
+  font-size: 4em;
+	line-height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+}
+.title {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+}
+#contactMe {
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  color: $blue;
+  cursor: pointer;
+}
+h2{
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: white;
+  margin: auto;
+}
+h3 {
+	font-size: 0em;
+
+}
+h4{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: $title-font;
+  font-size: 6em;
+	font-weight:lighter;
+  margin: auto;
+}
+h5 {
+	font-size: 1.5em;
+  text-align: left;
+line-height: 0.5em;
+}
+p {
+
+}
+.title_white {
+  color: white;
+}
+.title_colored {
+	color:$blue;
+}
+
+div.icons {
+  padding: 0 7% 0;
+}
+img.social_icon {
+  padding-left: 2%;
+  padding-right: 2%;
+  height: $icon-size;
+  width: $icon-size;
+}
+///////////////////////////////////////////////////////////////FORM STYLE///////////////////////////////////////////////////////////////
+
+
+   #form_section {
+		font-size:80%;
+		background:white;
+    margin:5% auto 0;
+    text-align:center;
+  	padding: 2vh 0 0;
+    width:100%;
+  }
+// Form
+form {
+		  @include grid(7);
+
+		  .field {
+			    width:100%;
+			    position:relative;
+			    margin-bottom:15px;
+
+    			$hover-label-width:30%;
+			    $placeholder-bumper:2%;
+			    $label-padding:15px;
+
+    			// Label
+			    label {
+							color:white;
+				      position:absolute;
+				      top:0;
+				      left:0;
+				      background:$dark-grey;
+				      width:100%;
+				      padding:($label-padding + 0px) 0;
+				      font-size: 1.45em;
+				      letter-spacing: 0.075em;
+
+				      @include ease(333ms);
+
+				      // Checkmark
+				      + span {
+
+					        opacity: 0;
+					        color:white;
+				        	display: block;
+					        position:absolute;
+					        top: 12px;
+					        left: 7%;
+					        font-size: 1.2em;
+					        text-shadow:1px 2px 0 $green;
+
+					        @include ease(333ms);
+			      	}
+			    }
+
+    			// Fields
+		    	input[type="text"],
+			    textarea {
+				      border:none;
+				      background:$field-color;
+				      width:100% - $hover-label-width - $placeholder-bumper;
+				      margin:0;
+				      padding:$label-padding 0;
+				      padding-left:$hover-label-width + $placeholder-bumper;
+				      color:$dark-grey;
+				      font-size: 1.2em;
+				      letter-spacing: 0.05em;
+							height: 25px;
+
+
+				      &#msg {
+					        height: 25px;
+					        resize: none;
+					        @include ease(333ms);
+				      }
+
+      				// Focus and JS Toggle Class
+				      &:focus,
+				      &.focused {
+					        outline:none;
+
+        					&#msg {
+						          padding-bottom:100px;
+					        }
+
+        					+ label {
+						          width:$hover-label-width;
+						          background:$green;
+						          color:white;
+					        }
+				      }
+
+      				// JS Toggle Class
+				      &.focused {
+					        + label {
+						          color: $green;
+					        }
+				      }
+			    }
+
+    			// Field Hover
+			    &:hover {
+				      label {
+					        width:$hover-label-width;
+					        background:$dark-grey;
+					        color:white;
+				      }
+			    }
+		  }
+
+		  // Submit Button
+		  input[type="submit"] {
+			    background:$green;
+			    color:white;
+			    -webkit-appearance: none;
+			    border: none;
+			    text-transform: uppercase;
+    		position:relative;
+		    padding: 13px 50px;
+		    font-size: 1.4em;
+		    letter-spacing: 0.1em;
+		    @include ease;
+
+    			&:hover {
+				      background:$dark-grey;
+				      color:$green;
+			    }
+
+    			&:focus {
+				      outline:none;
+				      background:$green;
+			    }
+		  }
+	}
+
+///////////////////////////////////////////////////////////////FOOTER STYLE///////////////////////////////////////////////////////////////
+
+footer{
+	  background-color: $pink;
+		height: 10vh;
+	  text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    vertical-align: bottom;
+	}

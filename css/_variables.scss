@@ -1,0 +1,30 @@
+/*
+* Fonts
+*/
+
+/*titles font*/
+$title-font:'Mightype Script';
+@include font-face($title-font, fonts/$title-font);
+
+/*text font*/
+$text-font:'CharlevoixPro-Light';
+@include font-face($text-font, fonts/$text-font);
+
+/*
+Design colors
+ */
+$dark-grey:#474D53;
+$grey:#B6B6B6;
+$light-grey:lighten($grey, 15%);
+$pink:#BB4481;
+$dark-pink:#9A396A;
+$yellow:#E5B100;
+$blue:#2F9DA8;
+$field-color:#E8E9EA;
+$green:#2DAC87;
+
+/*
+Images sizes
+ */
+
+$icon-size:50px;

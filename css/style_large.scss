@@ -1,0 +1,55 @@
+
+@import 'mixins';
+@import 'variables';
+@import 'effects';
+///////////////////////////////////////////////////////////////DOCUMENT STYLE///////////////////////////////////////////////////////////////
+
+html {
+  font-size: 100%;
+}
+
+article {
+  flex-direction: row;
+}
+.menu_icon {
+  display: none;
+}
+.left_about {
+	@include half_page_left($blue);
+
+}
+.right_about {
+	@include half_page_right(white);
+}
+.left_skills {
+	@include half_page_left($light-grey);
+}
+.right_skills {
+	@include half_page_right(white);
+}
+.left_work {
+	@include half_page_left($yellow);
+}
+.right_work {
+	@include half_page_right(white);
+}
+.left_contact {
+	@include half_page_left($green);
+}
+.right_contact {
+	@include half_page_right(white);
+	text-align: center;
+}
+h1{
+  font-size: 10em;
+	line-height: 85%;
+}
+span.my_photo {
+  display: block;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: -11vh;
+  margin-bottom: 2%;
+  right: -67px;
+  top: 50px
+}

@@ -1,0 +1,152 @@
+
+///////////////////////////////////////////////////////////////job title effect///////////////////////////////////////////////////////////////
+h2 a {
+position: relative;
+display: inline-block;
+margin: 15px;
+outline: none;
+color: white;
+text-decoration: none;
+letter-spacing: 1px;
+text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+h2 a:hover,
+h2 a:focus {
+	outline: none;
+  color: white;
+}
+
+.job-effect a{
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	perspective: 800px;
+	width: 200px;
+}
+.job-effect a span {
+
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	background: $dark-pink;
+	-webkit-transition: -webkit-transform 0.4s, background 0.4s;
+	-moz-transition: -moz-transform 0.4s, background 0.4s;
+	transition: transform 0.4s, background 0.4s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% -100px;
+	-moz-transform-origin: 50% 50% -100px;
+	transform-origin: 50% 50% -100px;
+}
+ .job-effect a span::before{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	background: $dark-pink;
+	content: attr(data-hover);
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	transition: background 0.4s;
+	-webkit-transform: rotateY(90deg);
+	-moz-transform: rotateY(90deg);
+	transform: rotateY(90deg);
+	-webkit-transform-origin: 0 50%;
+	-moz-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	pointer-events: none;
+}
+.job-effect a:hover span,
+.job-effect a:focus span {
+	background: $pink;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+
+}
+
+.job-effect  a:hover span::before,
+.job-effect  a:focus span::before {
+  right:60%;
+	background: $dark-pink;
+}
+
+///////////////////////////////////////////////////////////////Menu home effect///////////////////////////////////////////////////////////////
+
+.menu_home a {
+	color: rgba(0,0,0,0.7);
+	text-shadow: none;
+}
+
+.menu_home  a::before {
+	color: white;
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu_home  a:hover::before,
+.menu_home  a:focus::before {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0;
+}
+///////////////////////////////////////////////////////////////Mobile menu effect///////////////////////////////////////////////////////////////
+
+
+.menu-icon-wrapper {
+	position: relative;
+	display: inline-block;
+    width: 34px;
+    height: 34px;
+	margin: 2em;
+	pointer-events: none;
+	transition: 0.1s;
+}
+
+.menu-icon-wrapper.scaled {
+	-webkit-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.menu-icon-wrapper svg {
+	position: absolute;
+	top: -33px;
+	left: -33px;
+	-webkit-transform: scale(0.1);
+	-ms-transform: scale(0.1);
+	transform: scale(0.1);
+	-webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.menu-icon-wrapper svg path {
+	stroke: black;
+	stroke-width: 50px;
+	stroke-linecap: round;
+    stroke-linejoin: round;
+	fill: transparent;
+}
+
+.menu-icon-wrapper .menu-icon-trigger {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	pointer-events: auto;
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-icon-wrapper .menu-icon-trigger:hover,
+.menu-icon-wrapper .menu-icon-trigger:focus {
+	outline: none;
+}
