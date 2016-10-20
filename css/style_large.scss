@@ -60,3 +60,59 @@ span.my_photo {
   top: 70%;
   transform: translateY(-70%);
 }
+img.social_icon {
+
+  height: 50px;
+  width: 50px;
+}
+// Form
+form {
+		  @include grid(7);
+
+		  .field {
+
+			    margin-bottom:15px;
+
+    			$hover-label-width:30%;
+			    $placeholder-bumper:2%;
+			    $label-padding:15px;
+
+    			// Label
+			    label {
+				      font-size: 1.45em;
+				      letter-spacing: 0.075em;
+
+			    }
+
+    			// Fields
+		    	input[type="text"],
+			    textarea {
+				      font-size: 1.2em;
+				      letter-spacing: 0.05em;
+							height: 25px;
+
+
+				      &#msg {
+					        height: 25px;
+				      }
+
+      				// Focus and JS Toggle Class
+				      &:focus,
+				      &.focused {
+					        outline:none;
+        					&#msg {
+						          padding-bottom:100px;
+					        }
+				      }
+			    }
+		  }
+
+		  // Submit Button
+		  input[type="submit"] {
+
+		    padding: 13px 50px;
+		    font-size: 1.4em;
+		    letter-spacing: 0.1em;
+
+		  }
+	}

@@ -86,9 +86,6 @@ Author's custom styles
 /*
 Design colors
  */
-/*
-Images sizes
- */
 h2 a {
   position: relative;
   display: inline-block;
@@ -481,13 +478,14 @@ div.icons {
   flex-direction: row;
   text-align: center;
   justify-content: space-between;
+  margin-bottom: 5%;
   padding: 0 0 0; }
 
 img.social_icon {
   padding-left: 2%;
   padding-right: 2%;
-  height: 50px;
-  width: 50px; }
+  height: 30px;
+  width: 30px; }
 
 .contact_wrap {
   height: 80%;
@@ -517,43 +515,30 @@ form {
       left: 0;
       background: #474D53;
       width: 100%;
-      padding: 15px 0;
-      font-size: 1.45em;
+      padding: 10px 0;
+      font-size: 1.2em;
       letter-spacing: 0.075em;
+      height: 20px;
       -webkit-transition: all 333ms ease-in-out;
       -moz-transition: all 333ms ease-in-out;
       -o-transition: all 333ms ease-in-out;
       -ms-transition: all 333ms ease-in-out;
       transition: all 333ms ease-in-out; }
-      form .field label + span {
-        opacity: 0;
-        color: white;
-        display: block;
-        position: absolute;
-        top: 12px;
-        left: 7%;
-        font-size: 1.2em;
-        text-shadow: 1px 2px 0 #2DAC87;
-        -webkit-transition: all 333ms ease-in-out;
-        -moz-transition: all 333ms ease-in-out;
-        -o-transition: all 333ms ease-in-out;
-        -ms-transition: all 333ms ease-in-out;
-        transition: all 333ms ease-in-out; }
     form .field input[type="text"],
     form .field textarea {
       border: none;
       background: #E8E9EA;
-      width: 68%;
+      width: 69%;
       margin: 0;
-      padding: 15px 0;
-      padding-left: 32%;
+      padding: 10px 0;
+      padding-left: 31%;
       color: #474D53;
       font-size: 1.2em;
       letter-spacing: 0.05em;
-      height: 25px; }
+      height: 20px; }
       form .field input[type="text"]#msg,
       form .field textarea#msg {
-        height: 25px;
+        height: 20px;
         resize: none;
         -webkit-transition: all 333ms ease-in-out;
         -moz-transition: all 333ms ease-in-out;
@@ -567,7 +552,7 @@ form {
         form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
         form .field textarea:focus#msg,
         form .field textarea.focused#msg {
-          padding-bottom: 100px; }
+          padding-bottom: 80px; }
         form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
         form .field textarea:focus + label,
         form .field textarea.focused + label {
@@ -589,7 +574,7 @@ form {
     text-transform: uppercase;
     position: relative;
     padding: 13px 50px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: 0.1em;
     -webkit-transition: all 333ms ease-in-out;
     -moz-transition: all 333ms ease-in-out;
@@ -682,6 +667,10 @@ Media Queries for Responsive Design.
 ========================================================================== */
 @media only screen and (min-width: 28.75em) {
   /* Style adjustments for viewports that meet the condition */
+  img.social_icon {
+    height: 40px;
+    width: 40px; }
+
   html {
     font-size: 90%; }
 
@@ -703,9 +692,6 @@ Media Queries for Responsive Design.
     src: url('fonts/"CharlevoixPro-Light".eot?') format("eot"), url('fonts/"CharlevoixPro-Light".woff2') format("woff2"), url('fonts/"CharlevoixPro-Light".woff') format("woff"), url('fonts/"CharlevoixPro-Light".ttf') format("truetype"), url('fonts/"CharlevoixPro-Light".svg#CharlevoixPro-Light') format("svg"); }
   /*
   Design colors
-   */
-  /*
-  Images sizes
    */
   h2 a {
     position: relative;
@@ -968,7 +954,40 @@ Media Queries for Responsive Design.
     margin: auto;
     position: relative;
     top: 70%;
-    transform: translateY(-70%); } }
+    transform: translateY(-70%); }
+
+  img.social_icon {
+    height: 50px;
+    width: 50px; }
+
+  form {
+    width: 58.33333%;
+    margin: 0 auto; }
+    form .field {
+      margin-bottom: 15px; }
+      form .field label {
+        font-size: 1.45em;
+        letter-spacing: 0.075em; }
+      form .field input[type="text"],
+      form .field textarea {
+        font-size: 1.2em;
+        letter-spacing: 0.05em;
+        height: 25px; }
+        form .field input[type="text"]#msg,
+        form .field textarea#msg {
+          height: 25px; }
+        form .field input[type="text"]:focus, form .field input[type="text"].focused,
+        form .field textarea:focus,
+        form .field textarea.focused {
+          outline: none; }
+          form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+          form .field textarea:focus#msg,
+          form .field textarea.focused#msg {
+            padding-bottom: 100px; }
+    form input[type="submit"] {
+      padding: 13px 50px;
+      font-size: 1.4em;
+      letter-spacing: 0.1em; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

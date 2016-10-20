@@ -7,9 +7,9 @@ $(document).ready(function(){
    //menu: '#myMenu',
     //lockAnchors: false,
    //anchors:['about', 'skills', 'work','contact'],
-    navigation: true,
-    navigationPosition: 'right',
-    navigationTooltips: ['Home','About me', 'My skills', 'My work','Contact me','Footer'],
+    //navigation: true,
+  //  navigationPosition: 'right',
+    //navigationTooltips: ['Home','About me', 'My skills', 'My work','Contact me','Footer'],
     //showActiveTooltip: false,
     //slidesNavigation: true,
   //  slidesNavPosition: 'bottom',
@@ -20,7 +20,7 @@ $(document).ready(function(){
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
-        scrollBar: false,
+        scrollBar: true,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: false,
@@ -89,6 +89,7 @@ $(document).on('click', '#about4', function(){
 $(document).on('click', '#skills4', function(){
   $.fn.fullpage.moveTo(3, 0);
 });
+
 /////////////page slide/////////////
 $(function() {
    $('a[href*="#"]:not([href="#"])').click(function() {

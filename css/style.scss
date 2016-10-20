@@ -241,14 +241,17 @@ div.icons {
   flex-direction: row;
   text-align: center;
   justify-content: space-between;
-
+margin-bottom: 5%;
   padding: 0 0 0;
 }
+
+
+
 img.social_icon {
   padding-left: 2%;
   padding-right: 2%;
-  height: $icon-size;
-  width: $icon-size;
+  height: 30px;
+  width: 30px;
 }
 ///////////////////////////////////////////////////////////////FORM STYLE///////////////////////////////////////////////////////////////
  .contact_wrap {
@@ -277,8 +280,8 @@ form {
 			    margin-bottom:15px;
 
     			$hover-label-width:30%;
-			    $placeholder-bumper:2%;
-			    $label-padding:15px;
+			    $placeholder-bumper:1%;
+			    $label-padding:10px;
 
     			// Label
 			    label {
@@ -289,25 +292,13 @@ form {
 				      background:$dark-grey;
 				      width:100%;
 				      padding:($label-padding + 0px) 0;
-				      font-size: 1.45em;
+				      font-size: 1.2em;
 				      letter-spacing: 0.075em;
+              height: 20px;
 
 				      @include ease(333ms);
 
-				      // Checkmark
-				      + span {
 
-					        opacity: 0;
-					        color:white;
-				        	display: block;
-					        position:absolute;
-					        top: 12px;
-					        left: 7%;
-					        font-size: 1.2em;
-					        text-shadow:1px 2px 0 $green;
-
-					        @include ease(333ms);
-			      	}
 			    }
 
     			// Fields
@@ -322,11 +313,11 @@ form {
 				      color:$dark-grey;
 				      font-size: 1.2em;
 				      letter-spacing: 0.05em;
-							height: 25px;
+							height: 20px;
 
 
 				      &#msg {
-					        height: 25px;
+					        height: 20px;
 					        resize: none;
 					        @include ease(333ms);
 				      }
@@ -337,7 +328,7 @@ form {
 					        outline:none;
 
         					&#msg {
-						          padding-bottom:100px;
+						          padding-bottom:80px;
 					        }
 
         					+ label {
@@ -374,7 +365,7 @@ form {
 			    text-transform: uppercase;
     		position:relative;
 		    padding: 13px 50px;
-		    font-size: 1.4em;
+		    font-size: 1.2em;
 		    letter-spacing: 0.1em;
 		    @include ease;
 
