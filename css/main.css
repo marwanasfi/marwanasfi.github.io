@@ -325,15 +325,15 @@ article {
 
 .left_about {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 20vh;
+  max-height: 20vh;
   text-align: center;
   background-color: #2F9DA8; }
 
 .right_about {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 80vh;
+  max-height: 80vh;
   text-align: center;
   background-color: white; }
 
@@ -355,52 +355,49 @@ span.my_photo {
 
 .left_skills {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 20vh;
+  max-height: 20vh;
   text-align: center;
   background-color: gainsboro; }
 
 .right_skills {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 80vh;
+  max-height: 80vh;
   text-align: center;
   background-color: white; }
 
 .left_work {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 20vh;
+  max-height: 20vh;
   text-align: center;
   background-color: #E5B100; }
 
 .right_work {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 80vh;
+  max-height: 80vh;
   text-align: center;
   background-color: white; }
 
 .left_contact {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 20vh;
+  max-height: 20vh;
   text-align: center;
   background-color: #2DAC87; }
 
 .right_contact {
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 80vh;
+  max-height: 80vh;
   text-align: center;
   background-color: white;
   text-align: center; }
 
 .menu_black, .menu_white {
-  margin: auto;
-  position: relative;
-  top: 70%;
-  transform: translateY(-70%); }
+  display: none; }
 
 .menu_black ul, .menu_white ul {
   height: auto;
@@ -867,6 +864,7 @@ Media Queries for Responsive Design.
   .right_about {
     width: 50%;
     left: 50%;
+    height: 100vh;
     max-height: 100vh;
     text-align: left;
     float: right;
@@ -891,6 +889,7 @@ Media Queries for Responsive Design.
   .right_skills {
     width: 50%;
     left: 50%;
+    height: 100vh;
     max-height: 100vh;
     text-align: left;
     float: right;
@@ -915,6 +914,7 @@ Media Queries for Responsive Design.
   .right_work {
     width: 50%;
     left: 50%;
+    height: 100vh;
     max-height: 100vh;
     text-align: left;
     float: right;
@@ -939,6 +939,7 @@ Media Queries for Responsive Design.
   .right_contact {
     width: 50%;
     left: 50%;
+    height: 100vh;
     max-height: 100vh;
     text-align: left;
     float: right;
@@ -960,7 +961,14 @@ Media Queries for Responsive Design.
     margin-left: -11vh;
     margin-bottom: 2%;
     right: -67px;
-    top: 50px; } }
+    top: 50px; }
+
+  .menu_black, .menu_white {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 70%;
+    transform: translateY(-70%); } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

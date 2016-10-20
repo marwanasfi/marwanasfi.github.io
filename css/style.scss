@@ -109,11 +109,11 @@ article {
   text-align: center;
 }
 .left_about {
-	@include page($blue);
+	@include page($blue,20vh);
 
 }
 .right_about {
-	@include page(white);
+	@include page(white,80vh);
 
 }
 
@@ -135,29 +135,26 @@ display: none;
   list-style: none;
 }
 .left_skills {
-	@include page($light-grey);
+	@include page($light-grey, 20vh);
 }
 .right_skills {
-	@include page(white);
+	@include page(white,80vh);
 }
 .left_work {
-	@include page($yellow);
+	@include page($yellow,20vh);
 }
 .right_work {
-	@include page(white);
+	@include page(white,80vh);
 }
 .left_contact {
-	@include page($green);
+	@include page($green,20vh);
 }
 .right_contact {
-	@include page(white);
+	@include page(white,80vh);
 	text-align: center;
 }
 .menu_black{
-  margin: auto;
-  position: relative;
-  top: 70%;
-  transform: translateY(-70%);
+display: none;
 }
 .menu_black ul{
     height: auto;
@@ -267,7 +264,7 @@ justify-content: space-between;
 		background:white;
     margin:5% auto 0;
     text-align:center;
-  	
+
     width:100%;
   }
 // Form
