@@ -479,7 +479,12 @@ h5 {
   color: #2F9DA8; }
 
 div.icons {
-  padding: 0 7% 0; }
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 0 0; }
 
 img.social_icon {
   padding-left: 2%;
@@ -487,12 +492,18 @@ img.social_icon {
   height: 50px;
   width: 50px; }
 
+.contact_wrap {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
 #form_section {
   font-size: 80%;
   background: white;
   margin: 5% auto 0;
   text-align: center;
-  padding: 2vh 0 0;
   width: 100%; }
 
 form {
