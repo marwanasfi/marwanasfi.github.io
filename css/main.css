@@ -244,14 +244,14 @@ main {
 header {
   background-color: #BB4481;
   width: 100%;
-  height: 90vh;
-  max-height: 90vh;
+  height: 100vh;
+  max-height: 100vh;
   text-align: center; }
 
 .menu_home {
+  display: block;
   font-size: 1.3em;
-  margin: auto;
-  margin-bottom: 15vh; }
+  margin: auto; }
 
 .menu_home .ul {
   height: auto;
@@ -427,7 +427,7 @@ h1 {
   /* Horizontal center alignment */ }
 
 .title {
-  height: 85vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -828,15 +828,8 @@ Media Queries for Responsive Design.
   html {
     font-size: 100%; }
 
-  header {
-    height: 100vh;
-    max-height: 100vh; }
-
   article {
     flex-direction: row; }
-
-  .menu_home {
-    margin-bottom: 5vh; }
 
   .menu_icon {
     display: none; }
