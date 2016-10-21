@@ -967,7 +967,8 @@ Media Queries for Responsive Design.
       margin-bottom: 15px; }
       form .field label {
         font-size: 1.45em;
-        letter-spacing: 0.075em; }
+        letter-spacing: 0.075em;
+        height: 25px; }
       form .field input[type="text"],
       form .field textarea {
         font-size: 1.2em;

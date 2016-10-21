@@ -75,12 +75,13 @@ form {
 
     			$hover-label-width:30%;
 			    $placeholder-bumper:2%;
-			    $label-padding:15px;
+			    $label-padding:25px;
 
     			// Label
 			    label {
 				      font-size: 1.45em;
 				      letter-spacing: 0.075em;
+              height: 25px;
 
 			    }
 
