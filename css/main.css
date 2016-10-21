@@ -675,7 +675,12 @@ Media Queries for Responsive Design.
 
   h1 {
     font-size: 7em;
-    line-height: 85%; } }
+    line-height: 85%; }
+
+  .content {
+    padding-top: 6vh;
+    padding-left: 6vh;
+    padding-right: 6vh; } }
 @media only screen and (min-width: 60em) {
   /* Style adjustments for viewports that meet the condition */
   /*
