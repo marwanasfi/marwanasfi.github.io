@@ -244,8 +244,8 @@ main {
 header {
   background-color: #BB4481;
   width: 100%;
-  height: 100vh;
-  max-height: 100vh;
+  height: 90vh;
+  max-height: 90vh;
   text-align: center; }
 
 .menu_home {
@@ -255,7 +255,6 @@ header {
 
 .menu_home .ul {
   height: auto;
-  padding: 2% 0;
   margin: 0; }
 
 .menu_home li {
@@ -828,6 +827,10 @@ Media Queries for Responsive Design.
 
   html {
     font-size: 100%; }
+
+  header {
+    height: 100vh;
+    max-height: 100vh; }
 
   article {
     flex-direction: row; }
