@@ -9,6 +9,8 @@ $(document).ready(function(){
       $(".content").css({'height':'100%','max-height':'100%', 'overflow-y': 'hidden'});
       $(".right_about").css({'height':'100%','max-height':'100%'});
       $(".right_skills").css({'height':'100%','max-height':'100%'});
+      $(".right_work").css({'height':'100%','max-height':'100%'});
+      $(".right_contact").css({'height':'100%','max-height':'100%'});
     };
 
 
