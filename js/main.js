@@ -10,7 +10,7 @@ $(document).ready(function(){
       $(".right_about").css({'height':'100%','max-height':'100%'});
       $(".right_skills").css({'height':'100%','max-height':'100%'});
       $(".right_work").css({'height':'100%','max-height':'100%'});
-      $(".right_contact").css({'height':'120%','max-height':'120%'});
+      $(".right_contact").css({'height':'120%','max-height':'100%', 'padding-bottom':'20vh'});
     };
 
 
