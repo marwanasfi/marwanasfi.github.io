@@ -17,6 +17,19 @@ $(document).ready(function(){
   checkWidth();
 
 
+      // Store the window width
+      var windowWidth = $(window).width();
+      // Resize Event
+      $(window).resize(function(){
+          // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
+          if ($(window).width() != windowWidth) {
+              // Update the window width for next time
+              windowWidth = $(window).width();
+              location.reload();
+          }
+      });
+
+
   $('#fullpage').fullpage({
     //Navigation
     //menu: '#myMenu',
@@ -104,9 +117,7 @@ $(document).on('click', '#about4', function(){
 $(document).on('click', '#skills4', function(){
   $.fn.fullpage.moveTo(3, 0);
 });
-$(window).on('resize',function(){
-  location.reload();
-});
+
 /////////////page slide/////////////
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
