@@ -4,11 +4,11 @@
 
 /*titles font*/
 $title-font:'MightypeScript';
-@include font-face($title-font, fonts/$title-font);
+@include font-face('MightypeScript','../fonts/MightypeScript');
 
 /*text font*/
 $text-font:'CharlevoixProLight';
-@include font-face($text-font, fonts/$text-font);
+@include font-face('CharlevoixProLight', '../fonts/CharlevoixProLight');
 
 /*
 Design colors

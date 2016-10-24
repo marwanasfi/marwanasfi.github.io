@@ -15,6 +15,7 @@ $(document).ready(function(){
       $("#skills").attr('href','#skills_anchor');
       $("#work").attr('href','#work_anchor');
       $("#contact").attr('href','#contact_anchor');
+      $("#contactMe").attr('href','#contact_anchor');
     };
 
 

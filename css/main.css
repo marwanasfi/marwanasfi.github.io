@@ -77,12 +77,12 @@ Author's custom styles
 */
 /*titles font*/
 @font-face {
-  font-family: "Mightype Script";
-  src: url('fonts/"Mightype Script".eot?') format("eot"), url('fonts/"Mightype Script".woff2') format("woff2"), url('fonts/"Mightype Script".woff') format("woff"), url('fonts/"Mightype Script".ttf') format("truetype"), url('fonts/"Mightype Script".svg#Mightype_Script') format("svg"); }
+  font-family: "MightypeScript";
+  src: url("../fonts/MightypeScript.eot?") format("eot"), url("../fonts/MightypeScript.woff2") format("woff2"), url("../fonts/MightypeScript.woff") format("woff"), url("../fonts/MightypeScript.ttf") format("truetype"), url("../fonts/MightypeScript.svg#MightypeScript") format("svg"); }
 /*text font*/
 @font-face {
-  font-family: "CharlevoixPro-Light";
-  src: url('fonts/"CharlevoixPro-Light".eot?') format("eot"), url('fonts/"CharlevoixPro-Light".woff2') format("woff2"), url('fonts/"CharlevoixPro-Light".woff') format("woff"), url('fonts/"CharlevoixPro-Light".ttf') format("truetype"), url('fonts/"CharlevoixPro-Light".svg#CharlevoixPro-Light') format("svg"); }
+  font-family: "CharlevoixProLight";
+  src: url("../fonts/CharlevoixProLight.eot?") format("eot"), url("../fonts/CharlevoixProLight.woff2") format("woff2"), url("../fonts/CharlevoixProLight.woff") format("woff"), url("../fonts/CharlevoixProLight.ttf") format("truetype"), url("../fonts/CharlevoixProLight.svg#CharlevoixProLight") format("svg"); }
 /*
 Design colors
  */
@@ -220,7 +220,7 @@ h2 a:focus {
   outline: none; }
 
 html {
-  font-family: "CharlevoixPro-Light";
+  font-family: "CharlevoixProLight";
   color: #222;
   font-size: 80%;
   line-height: 1.4;
@@ -416,7 +416,7 @@ h1 {
   width: 35%;
   height: 80%;
   margin: auto;
-  font-family: "Mightype Script";
+  font-family: "MightypeScript";
   font-weight: normal;
   font-size: 4em;
   line-height: 85%;
@@ -457,7 +457,7 @@ h4 {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  font-family: "Mightype Script";
+  font-family: "MightypeScript";
   font-size: 6em;
   font-weight: lighter;
   margin: auto; }
@@ -690,12 +690,12 @@ Media Queries for Responsive Design.
   */
   /*titles font*/
   @font-face {
-    font-family: "Mightype Script";
-    src: url('fonts/"Mightype Script".eot?') format("eot"), url('fonts/"Mightype Script".woff2') format("woff2"), url('fonts/"Mightype Script".woff') format("woff"), url('fonts/"Mightype Script".ttf') format("truetype"), url('fonts/"Mightype Script".svg#Mightype_Script') format("svg"); }
+    font-family: "MightypeScript";
+    src: url("../fonts/MightypeScript.eot?") format("eot"), url("../fonts/MightypeScript.woff2") format("woff2"), url("../fonts/MightypeScript.woff") format("woff"), url("../fonts/MightypeScript.ttf") format("truetype"), url("../fonts/MightypeScript.svg#MightypeScript") format("svg"); }
   /*text font*/
   @font-face {
-    font-family: "CharlevoixPro-Light";
-    src: url('fonts/"CharlevoixPro-Light".eot?') format("eot"), url('fonts/"CharlevoixPro-Light".woff2') format("woff2"), url('fonts/"CharlevoixPro-Light".woff') format("woff"), url('fonts/"CharlevoixPro-Light".ttf') format("truetype"), url('fonts/"CharlevoixPro-Light".svg#CharlevoixPro-Light') format("svg"); }
+    font-family: "CharlevoixProLight";
+    src: url("../fonts/CharlevoixProLight.eot?") format("eot"), url("../fonts/CharlevoixProLight.woff2") format("woff2"), url("../fonts/CharlevoixProLight.woff") format("woff"), url("../fonts/CharlevoixProLight.ttf") format("truetype"), url("../fonts/CharlevoixProLight.svg#CharlevoixProLight") format("svg"); }
   /*
   Design colors
    */
