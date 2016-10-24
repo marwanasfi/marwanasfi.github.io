@@ -3,11 +3,11 @@
 */
 
 /*titles font*/
-$title-font:'Mightype Script';
+$title-font:'MightypeScript';
 @include font-face($title-font, fonts/$title-font);
 
 /*text font*/
-$text-font:'CharlevoixPro-Light';
+$text-font:'CharlevoixProLight';
 @include font-face($text-font, fonts/$text-font);
 
 /*
