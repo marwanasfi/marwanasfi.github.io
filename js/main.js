@@ -11,6 +11,10 @@ $(document).ready(function(){
       $(".right_skills").css({'height':'100%','max-height':'100%'});
       $(".right_work").css({'height':'100%','max-height':'100%'});
       $(".right_contact").css({'height':'120%','max-height':'100%', 'padding-bottom':'10vh'});
+      $("#about").attr('href','#about_anchor');
+      $("#skills").attr('href','#skills_anchor');
+      $("#work").attr('href','#work_anchor');
+      $("#contact").attr('href','#contact_anchor');
     };
 
 
