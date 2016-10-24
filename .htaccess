@@ -992,3 +992,4 @@ AddType application/x-font-otf           otf
 AddType application/font-woff            woff
 AddType application/font-woff2           woff2
 AddType application/vnd.ms-fontobject    eot
+AddType application/image/svg+xml        svg
