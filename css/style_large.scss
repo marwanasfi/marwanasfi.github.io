@@ -15,6 +15,9 @@ article {
 .menu_icon {
   display: none;
 }
+.dummy {
+  display:none;
+}
 .left_about {
 	@include half_page_left($blue);
 

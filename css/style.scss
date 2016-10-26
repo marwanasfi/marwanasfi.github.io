@@ -5,7 +5,7 @@
 html {
   font-family: $text-font;
   color: #222;
-  font-size: 80%;
+  font-size: 90%;
   line-height: 1.4;
 	position: relative;
   min-height: 100%;
@@ -62,17 +62,16 @@ cursor: pointer;
 
 
 .menu_icon{
-  background-image: url("../img/separator_white.svg");
-  background-repeat: no-repeat;
-  width:50px;
-  height: 50px;
+
+  //background-image: url("../img/black_circle.svg");
+//  background-repeat: no-repeat;
+  width:20%;
+  height: 20%;
   position: fixed;
-  left: 30px;
-  top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Vertical center alignment */
-  justify-content: center; /* Horizontal center alignment */
+  z-index: 1000;
+
+  //align-items: center; /* Vertical center alignment */
+  //justify-content: center; /* Horizontal center alignment */
 }
   /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
        .menu_icon:before,
@@ -123,8 +122,8 @@ article {
 .content {
   padding-top: 3vh;
   padding-bottom: 3vh;
-  padding-left: 6vw;
-  padding-right: 6vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
   max-height: 80vh;
   overflow-x:hidden;
   overflow-y: auto;
@@ -390,6 +389,7 @@ form {
 ///////////////////////////////////////////////////////////////FOOTER STYLE///////////////////////////////////////////////////////////////
 
 footer{
+
 	  background-color: $pink;
 		height: 10vh;
 	  text-align: center;
