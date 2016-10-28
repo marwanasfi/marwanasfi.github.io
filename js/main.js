@@ -57,7 +57,7 @@ $(document).ready(function(){
     //menu: '#myMenu',
     //lockAnchors: false,
     //anchors:['about', 'skills', 'work','contact'],
-    //navigation: true,
+    navigation: true,
     //  navigationPosition: 'right',
     //navigationTooltips: ['Home','About me', 'My skills', 'My work','Contact me','Footer'],
     //showActiveTooltip: false,

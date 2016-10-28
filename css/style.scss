@@ -7,30 +7,30 @@ html {
   color: #222;
   font-size: 90%;
   line-height: 1.4;
-	position: relative;
+  position: relative;
   min-height: 100%;
 }
 body {
- display: flex;
- min-height: 100vh;
- flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 
 }
 .site-wrapper {
-    position: relative;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
 }
 main {
-flex: 1;
+  flex: 1;
 }
 header{
-	background-color: $pink;
-	width: 100%;
-	height: 100vh;
+  background-color: $pink;
+  width: 100%;
+  height: 100vh;
   max-height: 100vh;
-	text-align: center;
+  text-align: center;
 
 }
 
@@ -38,25 +38,25 @@ header{
   display: block;
   font-size: 1.3em ;
   width: 100%;
- margin:auto;
+  margin:auto;
 }
 .menu_home ul {
-    height: auto;
+  height: auto;
 
 }
 .menu_home  li {
-display: inline;
-font-weight: lighter;
-padding-right: 3%;
+  display: inline;
+  font-weight: lighter;
+  padding-right: 3%;
 
 
 }
- li a{
-cursor: pointer;
+li a{
+  cursor: pointer;
 }
 .separator {
-	height: 1%;
-	width: 1%;
+  height: 1%;
+  width: 1%;
   margin: 0.5% 0;
 }
 
@@ -64,7 +64,7 @@ cursor: pointer;
 .menu_icon{
 
   //background-image: url("../img/black_circle.svg");
-//  background-repeat: no-repeat;
+  //  background-repeat: no-repeat;
   width:20%;
   height: 20%;
   position: fixed;
@@ -73,21 +73,21 @@ cursor: pointer;
   //align-items: center; /* Vertical center alignment */
   //justify-content: center; /* Horizontal center alignment */
 }
-  /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
-       .menu_icon:before,
-       .menu_icon:after {
-           content:"";
-           display:table;
-       }
+/*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+.menu_icon:before,
+.menu_icon:after {
+  content:"";
+  display:table;
+}
 
-       .menu_icon:after {
-           clear:both;
-       }
+.menu_icon:after {
+  clear:both;
+}
 
-       /* For IE 6/7 (trigger hasLayout) */
-       .menu_icon {
-           zoom:1;
-       }
+/* For IE 6/7 (trigger hasLayout) */
+.menu_icon {
+  zoom:1;
+}
 
 a{
   text-decoration: none;
@@ -98,10 +98,10 @@ a:hover{
   color: $dark-grey;
 }
 .menu_white a {
-	color:white;
+  color:white;
 }
 .menu_white a:hover {
-	color:$light-grey;
+  color:$light-grey;
 }
 article {
   display:flex;
@@ -111,11 +111,11 @@ article {
   text-align: center;
 }
 .left_about {
-	@include page($blue,20vh);
+  @include page($blue,25vh);
 
 }
 .right_about {
-	@include page(white,80vh);
+  @include page(white,75vh);
 
 }
 
@@ -124,54 +124,57 @@ article {
   padding-bottom: 3vh;
   padding-left: 8vw;
   padding-right: 8vw;
-  max-height: 80vh;
+  //max-height: 80vh;
   overflow-x:hidden;
   overflow-y: auto;
   text-align: left;
 }
 
 span.my_photo {
-display: none;
+  display: none;
 }
 .languages {
   padding-left: 0;
   list-style: none;
 }
 .left_skills {
-	@include page($light-grey, 20vh);
+  @include page($light-grey, 25vh);
 }
 .right_skills {
-	@include page(white,80vh);
+  @include page(white,75vh);
 }
 .left_work {
-	@include page($yellow,20vh);
+  @include page($yellow,25vh);
+  z-index: 199;
 }
 .right_work {
-	@include page(white,80vh);
+  @include page(white,75vh);
+  z-index: 100;
 }
 .left_contact {
-	@include page($green,20vh);
+  @include page($green,25vh);
+    z-index: 199;
 }
 .right_contact {
-	@include page(white,80vh);
-	text-align: center;
+  @include page(white,75vh);
+  text-align: center;
 }
 .menu_black{
-display: none;
+  display: none;
 }
 .menu_black ul{
-    height: auto;
-    padding: 2% 0;
-    margin: 0px;
+  height: auto;
+  padding: 2% 0;
+  margin: 0px;
 
 }
 .menu_black li{
-display: inline;
-padding: 1%;
+  display: inline;
+  padding: 1%;
 }
 .menu_white {
-	@extend .menu_black;
-	color: white;
+  @extend .menu_black;
+  color: white;
 }
 
 h1{
@@ -182,10 +185,10 @@ h1{
   width: 50%;
   height: 80%;
   margin: auto;
-	font-family: $title-font;
+  font-family: $title-font;
   font-weight: normal;
   font-size: 5em;
-	line-height: 85%;
+  line-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center; /* Vertical center alignment */
@@ -213,7 +216,7 @@ h2{
   margin: auto;
 }
 h3 {
-	font-size: 0em;
+  font-size: 0em;
 
 }
 h4{
@@ -222,13 +225,18 @@ h4{
   transform: translateY(-50%);
   font-family: $title-font;
   font-size: 6em;
-	font-weight:lighter;
+  font-weight:lighter;
   margin: auto;
 }
 h5 {
-	font-size: 1.5em;
+  font-size: 1.5em;
   text-align: left;
-line-height: 0.5em;
+  line-height: 0.5em;
+}
+h6 {
+  font-size: 2em;
+  text-align: left;
+  line-height: 0.5em;
 }
 p {
 
@@ -237,8 +245,130 @@ p {
   color: white;
 }
 .title_colored {
-	color:$blue;
+  color:$blue;
 }
+
+///////////////////////////////////////////////////////////////Work Images STYLE///////////////////////////////////////////////////////////////
+
+.work_image{
+  height: 100vh;
+  width: auto;
+
+}
+
+caption {
+	margin-bottom:.5em;
+	text-align:center;
+
+}
+p,fieldset,table {
+	margin-bottom:1em;
+}
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+
+}
+#mainwrapper {
+	height: auto;
+	text-align: center;
+	width: 100%;
+}
+
+/* Image Box Style */
+#mainwrapper .box {
+	cursor: pointer;
+	height: 100vh;
+  position: relative;
+
+}
+#mainwrapper .box img {
+	position: absolute;
+  top:0;
+	left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;
+	 transition: all 300ms ease-out;
+}
+
+/* Caption  Style */
+#mainwrapper .box .caption {
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	color: #fff;
+	z-index: 90;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;
+		transition: all 300ms ease-out;
+	left: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+ #mainwrapper .box .scale-caption  {
+	opacity: 0;
+	width: 100vw;
+	height: 100vh;
+	text-align: left;
+	padding: 25px;
+}
+
+
+/** Caption Scale **/
+#mainwrapper .box .scale-caption h6,  #mainwrapper .box .scale-caption h5, #mainwrapper .box .scale-caption p {
+	position: relative;
+	left: -90vw;
+	width: 80vw;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+#mainwrapper .box .scale-caption h6, #mainwrapper .box .scale-caption h5 {
+	-webkit-transition-delay: 300ms;
+	-moz-transition-delay: 300ms;
+	-o-transition-delay: 300ms;
+	-ms-transition-delay: 300ms;
+	transition-delay: 300ms;
+}
+
+#mainwrapper .box .scale-caption p {
+	-webkit-transition-delay: 500ms;
+	-moz-transition-delay: 500ms;
+	-o-transition-delay: 500ms;
+	-ms-transition-delay: 500ms;
+	transition-delay: 500ms;
+}
+
+/** Scale Caption :hover Behaviour **/
+
+ #mainwrapper .box:hover .scale-caption  {
+	opacity: 1;
+}
+
+#mainwrapper .box:hover .work_image {
+  z-index: 1;
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
+
+}
+
+#mainwrapper .box:hover .scale-caption h6, #mainwrapper .box:hover .scale-caption h5, #mainwrapper .box:hover .scale-caption p {
+	-moz-transform: translateX(90vw);
+	-o-transform: translateX(90vw);
+	-webkit-transform: translateX(90vw);
+	transform: translateX(90vw);
+}
+
 
 div.icons {
   width: 30%;
@@ -259,143 +389,143 @@ img.social_icon {
   width: 30px;
 }
 ///////////////////////////////////////////////////////////////FORM STYLE///////////////////////////////////////////////////////////////
- .contact_wrap {
-height: 80%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-justify-content: space-between;
- }
+.contact_wrap {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
-   #form_section {
-		font-size:80%;
-		background:white;
-    margin:5% auto 0;
-    text-align:center;
+#form_section {
+  font-size:80%;
+  background:white;
+  margin:5% auto 0;
+  text-align:center;
 
-    width:100%;
-  }
+  width:100%;
+}
 // Form
 form {
-		  @include grid(7);
+  @include grid(7);
 
-		  .field {
-			    width:100%;
-			    position:relative;
-			    margin-bottom:15px;
+  .field {
+    width:100%;
+    position:relative;
+    margin-bottom:15px;
 
-    			$hover-label-width:30%;
-			    $placeholder-bumper:1%;
-			    $label-padding:10px;
+    $hover-label-width:30%;
+    $placeholder-bumper:1%;
+    $label-padding:10px;
 
-    			// Label
-			    label {
-							color:white;
-				      position:absolute;
-				      top:0;
-				      left:0;
-				      background:$dark-grey;
-				      width:100%;
-				      padding:($label-padding + 0px) 0;
-				      font-size: 1.2em;
-				      letter-spacing: 0.075em;
-              height: 20px;
+    // Label
+    label {
+      color:white;
+      position:absolute;
+      top:0;
+      left:0;
+      background:$dark-grey;
+      width:100%;
+      padding:($label-padding + 0px) 0;
+      font-size: 1.2em;
+      letter-spacing: 0.075em;
+      height: 20px;
 
-				      @include ease(333ms);
-
-
-			    }
-
-    			// Fields
-		    	input[type="text"],
-			    textarea {
-				      border:none;
-				      background:$field-color;
-				      width:100% - $hover-label-width - $placeholder-bumper;
-				      margin:0;
-				      padding:$label-padding 0;
-				      padding-left:$hover-label-width + $placeholder-bumper;
-				      color:$dark-grey;
-				      font-size: 1.2em;
-				      letter-spacing: 0.05em;
-							height: 20px;
+      @include ease(333ms);
 
 
-				      &#msg {
-					        height: 20px;
-					        resize: none;
-					        @include ease(333ms);
-				      }
+    }
 
-      				// Focus and JS Toggle Class
-				      &:focus,
-				      &.focused {
-					        outline:none;
+    // Fields
+    input[type="text"],
+    textarea {
+      border:none;
+      background:$field-color;
+      width:100% - $hover-label-width - $placeholder-bumper;
+      margin:0;
+      padding:$label-padding 0;
+      padding-left:$hover-label-width + $placeholder-bumper;
+      color:$dark-grey;
+      font-size: 1.2em;
+      letter-spacing: 0.05em;
+      height: 20px;
 
-        					&#msg {
-						          padding-bottom:80px;
-					        }
 
-        					+ label {
-						          width:$hover-label-width;
-						          background:$green;
-						          color:white;
-					        }
-				      }
+      &#msg {
+        height: 20px;
+        resize: none;
+        @include ease(333ms);
+      }
 
-      				// JS Toggle Class
-				      &.focused {
-					        + label {
-						          color: $green;
-					        }
-				      }
-			    }
+      // Focus and JS Toggle Class
+      &:focus,
+      &.focused {
+        outline:none;
 
-    			// Field Hover
-			    &:hover {
-				      label {
-					        width:$hover-label-width;
-					        background:$dark-grey;
-					        color:white;
-				      }
-			    }
-		  }
+        &#msg {
+          padding-bottom:80px;
+        }
 
-		  // Submit Button
-		  input[type="submit"] {
-			    background:$green;
-			    color:white;
-			    -webkit-appearance: none;
-			    border: none;
-			    text-transform: uppercase;
-    		position:relative;
-		    padding: 13px 50px;
-		    font-size: 1.2em;
-		    letter-spacing: 0.1em;
-		    @include ease;
+        + label {
+          width:$hover-label-width;
+          background:$green;
+          color:white;
+        }
+      }
 
-    			&:hover {
-				      background:$dark-grey;
-				      color:$green;
-			    }
+      // JS Toggle Class
+      &.focused {
+        + label {
+          color: $green;
+        }
+      }
+    }
 
-    			&:focus {
-				      outline:none;
-				      background:$green;
-			    }
-		  }
-	}
+    // Field Hover
+    &:hover {
+      label {
+        width:$hover-label-width;
+        background:$dark-grey;
+        color:white;
+      }
+    }
+  }
+
+  // Submit Button
+  input[type="submit"] {
+    background:$green;
+    color:white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position:relative;
+    padding: 13px 50px;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    @include ease;
+
+    &:hover {
+      background:$dark-grey;
+      color:$green;
+    }
+
+    &:focus {
+      outline:none;
+      background:$green;
+    }
+  }
+}
 
 ///////////////////////////////////////////////////////////////FOOTER STYLE///////////////////////////////////////////////////////////////
 
 footer{
 
-	  background-color: $pink;
-		height: 10vh;
-	  text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    vertical-align: bottom;
-	}
+  background-color: $pink;
+  height: 10vh;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  vertical-align: bottom;
+}

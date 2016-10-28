@@ -36,29 +36,29 @@
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <!-- site content  -->
+  <!-- Website content  -->
   <div  id="fullpage">
     <!-- Home page -->
     <div class="section">
       <header>
         <a id="home" ></a>
-                    <div class="menu_icon" >
-                      <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
-                        <svg width="1000px" height="1000px">
-                          <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
-                          <path id="pathB" d="M 300 500 L 700 500"></path>
-                          <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
-                        </svg>
-                        <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
-                      </div><!-- menu-icon-wrapper -->
-
-                      <div id="dummy" class="dummy">
-                        <div class="dummy__item"><a href="#about_anchor" id="mobile_menu_about">About</a></div>
-                        <div class="dummy__item"><a href="#skills_anchor" id="mobile_menu_skills">Skills</a></div>
-                        <div class="dummy__item"><a href="#work_anchor" id="mobile_menu_work">Work</a></div>
-                        <div class="dummy__item"><a href="#contact_anchor" id="mobile_menu_contact">Contact</a></div>
-                      </div><!-- /dummy -->
-  </div>
+        <!-- Mobile menu -->
+        <div class="menu_icon" >
+          <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+            <svg width="1000px" height="1000px">
+              <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+              <path id="pathB" d="M 300 500 L 700 500"></path>
+              <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+            </svg>
+            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+          </div>
+          <div id="dummy" class="dummy">
+            <div class="dummy__item"><a href="#about_anchor" id="mobile_menu_about">About</a></div>
+            <div class="dummy__item"><a href="#skills_anchor" id="mobile_menu_skills">Skills</a></div>
+            <div class="dummy__item"><a href="#work_anchor" id="mobile_menu_work">Work</a></div>
+            <div class="dummy__item"><a href="#contact_anchor" id="mobile_menu_contact">Contact</a></div>
+          </div>
+        </div>
 
 
         <div class="title">
@@ -66,6 +66,7 @@
           <h2 class="job-effect"><a href="#about_anchor"><span data-hover="Mother">Web developer</span></a></h2>
           <nav class="menu_home">
             <h3>Main navigation</h3>
+            <!-- Main menu -->
             <ul id="myMenu">
               <li  ><a id="about" data-hover="About">About</a></li>
               <li ><img src="img/separator_white.svg"  class="separator"></img></li>
@@ -80,59 +81,62 @@
 
       </header>
     </div>
-      <!-- About me page -->
+    <!-- About me page -->
+    <div class="section">
+      <article>
+        <h3>Information about Marwa Nasfi</h3>
+        <a id="about_anchor" ></a>
+        <aside class="left_about">
+          <h4 >About me</h4>
+          <nav class="menu_white">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a id="skills1" >Skills</a></li>
+              <li><img src="img/separator_white.svg"  class="separator"></img></li>
+              <li><a id="work1" >Work</a></li>
+              <li><img src="img/separator_white.svg"  class="separator"></img></li>
+              <li><a id="contact1">Contact</a></li>
+            </ul>
+          </nav>
+          <span class="my_photo"><img  src="img/me.png"></img></span>
+        </aside>
+        <section class="right_about" >
+          <div class="slide" >
+            <div  class="content">
+              <p align="center">Hi, my name is Marwa Nasfi, I am a motivated and result-oriented web developer from Tunisia living in
+                Uppsala, Sweden. I'm also the mother of a beautiful son and a coffee lover.</p>
+                <h5>What I do</h5>
+                <p>I build websites from concept all the way to completion. So if you need help with a website or you only want to make a nice web design just get in touch ;).</p>
+                <p>Currently, I am seeking a position related to web development based in Uppsala. If you want to hire me, you are very welcome to <a id="contactMe">contact me </a>.</p>
+                <h5>My background</h5>
+                <p>I hold a Bachelor degree in Computer Science and Multimedia and I had few work experiences in Tunisia and in Saudi Arabia (if you need a copy of my professional CV just let me know).</p>
+                <h5> I also like</h5>
+                <p>Cooking, painting, crafting, video gaming, traveling and of course reading </p>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+      <!-- My skills page -->
       <div class="section">
-        <article>
-          <h3>Information about Marwa Nasfi</h3>
-          <a id="about_anchor" ></a>
-          <aside class="left_about">
-            <h4 >About me</h4>
-            <nav class="menu_white">
+        <article >
+          <h3>Skills of Marwa Nasfi</h3>
+          <a id="skills_anchor" ></a>
+          <aside class="left_skills">
+            <h4 >My skills</h4>
+            <nav class="menu_black">
               <h3>Navigation</h3>
               <ul>
-                <li><a id="skills1" >Skills</a></li>
+                <li><a id="about2" >About</a></li>
+                <li><img src="img/separator_white.svg" class="separator"></img></li>
+                <li><a id="work2" >Work</a></li>
                 <li><img src="img/separator_white.svg"  class="separator"></img></li>
-                <li><a id="work1" >Work</a></li>
-                <li><img src="img/separator_white.svg"  class="separator"></img></li>
-                <li><a id="contact1">Contact</a></li>
+                <li><a id="contact2">Contact</a></li>
               </ul>
             </nav>
-            <span class="my_photo"><img  src="img/me.png"></img></span>
           </aside>
-          <section class="right_about" >
-              <div  class="content">
-                <p align="center">Hi, my name is Marwa Nasfi, I am a motivated and result-oriented web developer from Tunisia living in
-                  Uppsala, Sweden. I'm also the mother of a beautiful son and a coffee lover.</p>
-                  <h5>What I do</h5>
-                  <p>I build websites from concept all the way to completion. So if you need help with a website or you only want to make a nice web design just get in touch ;).</p>
-                  <p>Currently, I am seeking a position related to web development based in Uppsala. If you want to hire me, you are very welcome to <a id="contactMe">contact me </a>.</p>
-                  <h5>My background</h5>
-                  <p>I hold a Bachelor degree in Computer Science and Multimedia and I had few work experiences in Tunisia and in Saudi Arabia (if you need a copy of my professional CV just let me know).</p>
-                  <h5> I also like</h5>
-                  <p>Cooking, painting, crafting, video gaming, traveling and of course reading </p>
-              </div>
-            </section>
-          </article>
-        </div>
-        <!-- My skills page -->
-        <div class="section">
-          <article >
-            <h3>Skills of Marwa Nasfi</h3>
-            <a id="skills_anchor" ></a>
-            <aside class="left_skills">
-              <h4 >My skills</h4>
-              <nav class="menu_black">
-                <h3>Navigation</h3>
-                <ul>
-                  <li><a id="about2" >About</a></li>
-                  <li><img src="img/separator_white.svg" class="separator"></img></li>
-                  <li><a id="work2" >Work</a></li>
-                  <li><img src="img/separator_white.svg"  class="separator"></img></li>
-                  <li><a id="contact2">Contact</a></li>
-                </ul>
-              </nav>
-            </aside>
-            <section class="right_skills">
+          <section class="right_skills">
+            <div class="slide">
               <div class="content">
                 <p> I have a strong talent for both back-end and front-end web development and I always enjoy learning new skills and implementing new ideas.</p>
                 <h5> Front-end</h5>
@@ -150,56 +154,72 @@
                   <li> English (Full professional proficiency)</li>
                   <li> Swedish (Limited working proficiency)</li>
                 </ul>
-
               </div>
-            </section>
-          </article>
-        </div>
-        <!-- My work page -->
-        <div class="section">
-          <article >
-            <h3>Previous work achieved by Marwa Nasfi</h3>
-            <a id="work_anchor" ></a>
-            <aside class="left_work">
-              <h4 class="title_black">My work</h4>
-              <nav class="menu_black">
-                <h3>Navigation</h3>
-                <ul>
-                  <li><a id="about3" >About</a></li>
-                  <li><img src="img/separator_white.svg" class="separator"></img></li>
-                  <li><a id="skills3" >Skills</a></li>
-                  <li><img src="img/separator_white.svg"  class="separator"></img></li>
-                  <li><a id="contact3">Contact</a></li>
-                </ul>
-              </nav>
-            </aside>
-            <section class="right_work">
-              <h3>Rahhala</h3>
-              <h3>Go-makkah</h3>
-              <h3>Doolaab</h3>
-            </section>
-          </article>
-        </div>
-        <!-- Contact me page -->
-        <div class="section">
-          <article data-id="contact">
-            <h3>Contact Marwa Nasfi</h3>
-            <a id="contact_anchor" ></a>
-            <aside class="left_contact">
-              <h4 class="title_black">Contact me</h4>
-              <nav class="menu_white">
-                <h3>Navigation</h3>
-                <ul>
-                  <li><a id="about4" >About</a></li>
-                  <li><img src="img/separator_white.svg" class="separator"></img></li>
-                  <li><a id="skills4" >Skills</a></li>
-                  <li><img src="img/separator_white.svg"  class="separator"></img></li>
-                  <li><a id="work4" >Work</a></li>
-                </ul>
-              </nav>
-            </aside>
-            <section class="right_contact">
-              <div class="contact_wrap">
+            </div>
+          </section>
+        </article>
+      </div>
+      <!-- My work page -->
+      <div class="section ">
+        <article >
+          <h3>Previous work achieved by Marwa Nasfi</h3>
+          <a id="work_anchor" ></a>
+          <aside class="left_work">
+            <h4 class="title_black">My work</h4>
+            <nav class="menu_black">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a id="about3" >About</a></li>
+                <li><img src="img/separator_white.svg" class="separator"></img></li>
+                <li><a id="skills3" >Skills</a></li>
+                <li><img src="img/separator_white.svg"  class="separator"></img></li>
+                <li><a id="contact3">Contact</a></li>
+              </ul>
+            </nav>
+          </aside>
+          <section class="right_work">
+            <h3>Rahhala</h3>
+            <h3>Go-makkah</h3>
+            <h3>Doolaab</h3>
+            <h3>Discovery box</h3>
+            <div class="slide">
+              <div id="mainwrapper">
+              <div class="box">
+              <div class="img-wrapper"><img src="img/DiscoveryBox_1-min.png" class="work_image" /></div>
+              <span class="caption scale-caption ">
+                <h6>Discovery Box</h6>
+                <p>I designed and developed a web application for the Siemens Discovery-Box initiative in Saudi Arabia. This application
+provided a visits scheduling system, a statistics dashboard and a complete administration system using an efficient and beautiful interface.</p>
+<p><bold>Technologies used:</bold><br /> HTML, PHP, CSS, JavaScript, JQuery and MySQL.</p>
+                <h5>Company: National Talents Co. </h5>
+
+              </span>
+            </div>
+
+            </div>
+          </section>
+        </article>
+      </div>
+      <!-- Contact me page -->
+      <div class="section">
+        <article data-id="contact">
+          <h3>Contact Marwa Nasfi</h3>
+          <a id="contact_anchor" ></a>
+          <aside class="left_contact">
+            <h4 class="title_black">Contact me</h4>
+            <nav class="menu_white">
+              <h3>Navigation</h3>
+              <ul>
+                <li><a id="about4" >About</a></li>
+                <li><img src="img/separator_white.svg" class="separator"></img></li>
+                <li><a id="skills4" >Skills</a></li>
+                <li><img src="img/separator_white.svg"  class="separator"></img></li>
+                <li><a id="work4" >Work</a></li>
+              </ul>
+            </nav>
+          </aside>
+          <section class="right_contact">
+            <div class="contact_wrap">
               <p>
                 <h3>Follow me </h3>
                 You can follow me here
@@ -210,8 +230,8 @@
                 <a href="https://se.linkedin.com/in/marwanasfi" title="Linkedin" target="_blank"><img src="img/linkedin.svg" class="social_icon"/></a>
               </div>
 
-                <h3>Contact form</h3>
-                <p>Or send me a message</p>
+              <h3>Contact form</h3>
+              <p>Or send me a message</p>
 
               <div id="form_section">
                 <form action="https://formspree.io/marwaworkmessages@gmail.com" method="post" >
@@ -237,9 +257,9 @@
                 </form>
               </div>
             </div>
-            </section>
-          </article>
-        </div>
+          </section>
+        </article>
+      </div>
       <div class="section fp-auto-height">
         <footer>
           Made by Marwa Nasfi - 2016

@@ -71,6 +71,27 @@ span.my_photo {
   top: 70%;
   transform: translateY(-70%);
 }
+
+
+
+ #mainwrapper .box .scale-caption  {
+	width: 45vw;
+  padding-top: 10vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+#mainwrapper .box .scale-caption h6, #mainwrapper .box .scale-caption h5, #mainwrapper .box .scale-caption p {
+	left: -45vw;
+	width: 40vw;
+}
+#mainwrapper .box:hover .scale-caption h6, #mainwrapper .box:hover .scale-caption h5, #mainwrapper .box:hover .scale-caption p {
+	-moz-transform: translateX(45vw);
+	-o-transform: translateX(45vw);
+	-webkit-transform: translateX(45vw);
+	transform: translateX(45vw);
+}
+
+
 img.social_icon {
 
   height: 50px;
