@@ -57,6 +57,7 @@
 // =============================================================================
 
 @mixin half_page_left($color) {
+	margin: 0;
 	width: 50%;
 	height: 100vh;
 	max-height: 100vh;
