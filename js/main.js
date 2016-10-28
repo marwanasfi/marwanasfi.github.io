@@ -70,7 +70,7 @@ $(document).ready(function(){
     autoScrolling: true,
     fitToSection: true,
     fitToSectionDelay: 1000,
-    scrollBar: true,
+    scrollBar: false,
     easing: 'easeInOutCubic',
     easingcss3: 'ease',
     loopBottom: false,
