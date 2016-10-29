@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
   function checkWidth() {
-    if ($(window).width() < 980) {
+    if ($(window).width() < 960) {
       $('#fullpage').attr('id','not_fullpage');
       $(".content").css({'height':'100%','max-height':'100%', 'overflow-y': 'hidden'});
       $(".right_about").css({'height':'100%','max-height':'100%'});
@@ -16,7 +16,32 @@ $(document).ready(function(){
       $("#work").attr('href','#work_anchor');
       $("#contact").attr('href','#contact_anchor');
       $("#contactMe").attr('href','#contact_anchor');
+      $(".fp-auto-height").css({'height':'auto'});
 
+      /////////////content divs height on mobile/////////////
+      function Height($elm) {
+        var windowHeight = $(window).height();
+        var height = $elm.prop('scrollHeight');
+
+
+
+
+        if($elm === ".right_work"){
+        $elm.css({'height':height/2,'max-height':height});
+        $(".work_image").css({'height':height,'width':'auto'});
+        $(".box").css({'height':height});
+        $(".scale-caption").css({'height':height});
+        $("#mainwrapper").css({'height':height});
+
+      }else {
+        $elm.css({'height':height,'max-height':height});
+      }
+      }
+
+      Height($(".right_about"));
+      Height($(".right_skills"));
+      Height($(".right_work"));
+      Height($(".right_contact"));
         /////////////page slide on mobile/////////////
         $(function() {
           $('a[href*="#"]:not([href="#"])').click(function() {

@@ -381,9 +381,7 @@ article {
   background-color: white; }
 
 .section {
-  width: 100vw;
-  height: 100vh;
-  max-height: auto; }
+  width: 100vw; }
 
 .content {
   padding-top: 3vh;
@@ -519,8 +517,7 @@ h4 {
 
 h5 {
   font-size: 1.5em;
-  text-align: left;
-  line-height: 0.5em; }
+  text-align: left; }
 
 h6 {
   font-size: 2em;
@@ -533,25 +530,17 @@ h6 {
 .title_colored {
   color: #2F9DA8; }
 
-.work_image {
-  height: 100vh;
-  width: auto; }
-
 caption {
-  margin-bottom: .5em;
   text-align: center; }
-
-p, fieldset, table {
-  margin-bottom: 1em; }
 
 .img-wrapper {
   display: inline-block;
   overflow: hidden; }
 
 #mainwrapper {
-  height: auto;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 /* Image Box Style */
 #mainwrapper .box {
@@ -1192,6 +1181,10 @@ Media Queries for Responsive Design.
     position: relative;
     top: 70%;
     transform: translateY(-70%); }
+
+  .work_image {
+    height: 100vh;
+    width: auto; }
 
   #mainwrapper .box .scale-caption {
     width: 45vw;
