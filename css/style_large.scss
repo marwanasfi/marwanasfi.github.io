@@ -36,6 +36,7 @@ article {
 }
 .right_work {
 	@include half_page_right(white);
+  position: absolute;
 }
 .left_contact {
 	@include half_page_left($green);
@@ -72,9 +73,12 @@ span.my_photo {
   transform: translateY(-70%);
 }
 
+
 .work_image{
   height: 100vh;
   width: auto;
+  margin-left:0;
+  padding-left: 0;
 
 }
 

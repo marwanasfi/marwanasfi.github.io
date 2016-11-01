@@ -255,6 +255,27 @@ p {
 }
 
 ///////////////////////////////////////////////////////////////Work Images STYLE///////////////////////////////////////////////////////////////
+.project_name{
+  font-size: 2em;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin:auto;
+  color: white;
+	text-align:center;
+	font-weight:bold;
+  background: rgb(54, 25, 25);
+  background: rgba(54, 25, 25, .5);
+  width:70%;
+  height: 10%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+}
 
 .work_image{
 
@@ -281,14 +302,17 @@ p,fieldset,table {
 	text-align: center;
 	width: 100%;
   overflow: hidden;
+
 }
 
 /* Image Box Style */
 #mainwrapper .box {
-	cursor: pointer;
   height: 100vh;
   position: relative;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
 }
 #mainwrapper .box img {
 	position: absolute;
@@ -305,6 +329,7 @@ p,fieldset,table {
 #mainwrapper .box .caption {
 	background-color: rgba(0,0,0,0.5);
 	position: absolute;
+  top:0;
 	color: #fff;
 	z-index: 90;
 		-webkit-transition: all 300ms ease-out;
