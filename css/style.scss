@@ -278,7 +278,7 @@ p {
 }
 
 .work_image{
-
+  max-height: 100vh;
   //width: 100vw;
   //max-width: 100vw;
   //height: auto;
@@ -294,20 +294,21 @@ p,fieldset,table {
 }
 .img-wrapper {
     display: inline-block;
+    max-height: 100vh;
     overflow: hidden;
 
 }
 #mainwrapper {
-	height: auto;
+//	height: auto;
 	text-align: center;
 	width: 100%;
   overflow: hidden;
-
 }
 
 /* Image Box Style */
 #mainwrapper .box {
   height: 100vh;
+  max-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -330,6 +331,8 @@ p,fieldset,table {
 	background-color: rgba(0,0,0,0.5);
 	position: absolute;
   top:0;
+  left: 0;
+    max-height: 100vh;
 	color: #fff;
 	z-index: 90;
 		-webkit-transition: all 300ms ease-out;
@@ -337,18 +340,18 @@ p,fieldset,table {
 		-o-transition: all 300ms ease-out;
 		-ms-transition: all 300ms ease-out;
 		transition: all 300ms ease-out;
-	left: 0;
   padding-top: 3vh;
   padding-bottom: 3vh;
   padding-left: 8vw;
   padding-right: 8vw;
+
 }
  #mainwrapper .box .scale-caption  {
 	opacity: 0;
 	width: 100vw;
 	height: 100vh;
 	text-align: left;
-	padding: 25px;
+  padding: 25px;
 }
 
 
@@ -382,20 +385,20 @@ p,fieldset,table {
 
 /** Scale Caption :hover Behaviour **/
 
- #mainwrapper .box:hover .scale-caption  {
+ #mainwrapper .box:hover .scale-caption,  #mainwrapper .box:active .scale-caption {
 	opacity: 1;
 }
 
-#mainwrapper .box:hover .work_image {
+#mainwrapper .box:hover .work_image, #mainwrapper .box:active .work_image {
   z-index: 1;
-	-moz-transform: scale(1.4);
-	-o-transform: scale(1.4);
-	-webkit-transform: scale(1.4);
-	transform: scale(1.4);
+	//-moz-transform: scale(1.4);
+	//-o-transform: scale(1.4);
+//	-webkit-transform: scale(1.4);
+	//transform: scale(1.4);
 
 }
 
-#mainwrapper .box:hover .scale-caption h6, #mainwrapper .box:hover .scale-caption h5, #mainwrapper .box:hover .scale-caption p {
+#mainwrapper .box:hover .scale-caption h6, #mainwrapper .box:hover .scale-caption h5, #mainwrapper .box:hover .scale-caption p, #mainwrapper .box:active .scale-caption h6, #mainwrapper .box:active .scale-caption h5, #mainwrapper .box:active .scale-caption p {
 	-moz-transform: translateX(90vw);
 	-o-transform: translateX(90vw);
 	-webkit-transform: translateX(90vw);
