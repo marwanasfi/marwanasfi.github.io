@@ -530,28 +530,11 @@ h6 {
 .title_colored {
   color: #2F9DA8; }
 
-.project_name {
-  font-size: 2em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  background: black;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 15%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Vertical center alignment */
-  justify-content: center;
-  /* Horizontal center alignment */ }
+.screenshot_container {
+  width: 100%; }
+
+.screenshot {
+  margin-bottom: 5vh; }
 
 .work_image {
   max-height: 100vh; }
