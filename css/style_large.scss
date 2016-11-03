@@ -91,17 +91,9 @@ span.my_photo {
   padding-left: 10vh;
   padding-right: 10vh;
 }
-#mainwrapper .box .scale-caption h6, #mainwrapper .box .scale-caption h5, #mainwrapper .box .scale-caption p {
-	left: -45vw;
-	width: 40vw;
+#mainwrapper .box .caption p {
+  width: 40vw;
 }
-#mainwrapper .box:hover .scale-caption h6, #mainwrapper .box:hover .scale-caption h5, #mainwrapper .box:hover .scale-caption p {
-	-moz-transform: translateX(45vw);
-	-o-transform: translateX(45vw);
-	-webkit-transform: translateX(45vw);
-	transform: translateX(45vw);
-}
-
 
 img.social_icon {
 
