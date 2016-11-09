@@ -570,7 +570,8 @@ h6 {
   color: #2F9DA8; }
 
 .screenshot_container {
-  width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 .screenshot {
   margin-bottom: 5vh; }
