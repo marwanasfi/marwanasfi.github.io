@@ -9,18 +9,34 @@ html {
   line-height: 1.4;
   position: relative;
   min-height: 100%;
+  overflow-x: hidden;
+  margin:0;padding:0;
 }
 body {
   display: flex;
   min-height: 100vh;
+  width: 98.7vw;
+  max-width: 100vw;
   flex-direction: column;
+  overflow-x: hidden;
+  margin:0;padding:0;
 
+}
+#fullpage{
+  max-width:100%;
+  margin: 0; padding: 0; overflow-x:hidden;
+}
+.section {
+  max-width:100%;
+  margin: 0; padding: 0; overflow-x:hidden;
 }
 .site-wrapper {
   position: relative;
   top: 0;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
+  margin:0;padding:0;
 }
 main {
   flex: 1;
@@ -28,9 +44,12 @@ main {
 header{
   background-color: $pink;
   width: 100%;
+  max-width:100%;
+  margin: 0; padding: 0; overflow-x:hidden;
   height: 100vh;
   max-height: 100vh;
   text-align: center;
+  margin:0;padding:0;
 
 }
 
@@ -39,9 +58,15 @@ header{
   font-size: 1.3em ;
   width: 100%;
   margin:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
 }
 .menu_home ul {
   height: auto;
+ padding:0px
 
 }
 .menu_home  li {
@@ -119,11 +144,12 @@ article {
 
 }
 .section {
-  width: 100vw;
+  width: 100%;
   //min-height:50vh;
   //max-height: auto;
 }
 .content {
+
   padding-top: 3vh;
   padding-bottom: 3vh;
   padding-left: 8vw;
@@ -187,6 +213,7 @@ h1{
   background-repeat: no-repeat;
   text-align: center;
   width: 50%;
+  max-width: 50%;
   height: 80%;
   margin: auto;
   font-family: $title-font;
@@ -203,6 +230,7 @@ h1{
   width: 100%;
   height: 90vh;
   display: flex;
+  margin: 0;
   flex-direction: column;
   align-items: center; /* Vertical center alignment */
   justify-content: center; /* Horizontal center alignment */
@@ -327,7 +355,7 @@ caption {
   width: 85vw;
 }
  #mainwrapper .box .scale-caption {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
   max-height: 100vh;
 	text-align: left;
@@ -490,6 +518,9 @@ footer{
   left: 0;
   bottom: 0;
   width: 100%;
+  max-width:100%;
+  margin: 0; padding: 0; overflow-x:hidden;
   color: #fff;
   vertical-align: bottom;
+  margin:0;padding:0;
 }

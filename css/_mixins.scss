@@ -58,7 +58,8 @@
 
 @mixin half_page_left($color) {
 	margin: 0;
-	width: 50vw;
+	width: 50%;
+	max-width: 50%;
 	height: 100vh;
 	max-height: 100vh;
 	text-align: center;
@@ -71,9 +72,10 @@
 	z-index: 199;
 }
 @mixin half_page_right($color) {
-
-	width: 50vw;
-	left: 50vw;
+	margin: 0;
+	width: 50%;
+	max-width: 50%;
+	left: 50%;
 	height: 100vh;
 	max-height: 100vh;
 	text-align: left;
