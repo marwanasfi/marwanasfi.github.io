@@ -655,7 +655,8 @@ img.social_icon {
   width: 30px; }
 
 .contact_wrap {
-  height: 80%;
+  height: 90%;
+  max-height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -664,8 +665,8 @@ img.social_icon {
 #form_section {
   font-size: 80%;
   background: white;
-  margin: 5% auto 0;
   text-align: center;
+  height: 70%;
   width: 100%; }
 
 form {
