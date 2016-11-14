@@ -655,8 +655,6 @@ img.social_icon {
   width: 30px; }
 
 .contact_wrap {
-  height: 90%;
-  max-height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1248,6 +1246,10 @@ Media Queries for Responsive Design.
   img.social_icon {
     height: 50px;
     width: 50px; }
+
+  .contact_wrap {
+    height: 90%;
+    max-height: 90%; }
 
   form {
     width: 58.33333%;

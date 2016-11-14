@@ -106,6 +106,10 @@ img.social_icon {
   height: 50px;
   width: 50px;
 }
+.contact_wrap {
+  height: 90%;
+  max-height: 90%;
+}
 // Form
 form {
 		  @include grid(7);
