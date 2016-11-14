@@ -720,7 +720,7 @@ form {
         form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
         form .field textarea:focus#msg,
         form .field textarea.focused#msg {
-          padding-bottom: 80px; }
+          padding-bottom: 60px; }
         form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
         form .field textarea:focus + label,
         form .field textarea.focused + label {
