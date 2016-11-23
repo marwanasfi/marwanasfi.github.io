@@ -569,6 +569,9 @@ h6 {
 .title_colored {
   color: #2F9DA8; }
 
+.screenshot_container {
+  overflow: auto; }
+
 .screenshot {
   margin-bottom: 5vh; }
 
