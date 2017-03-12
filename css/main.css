@@ -73,6 +73,21 @@ Browser Upgrade Prompt
 Author's custom styles
 ========================================================================== */
 /*
+ String Replace
+*/
+/*
+Font Face
+*/
+/*
+Grid
+*/
+/*
+Pages layout
+*/
+/*
+Transition Ease
+*/
+/*
 * Fonts
 */
 /*titles font*/
@@ -275,6 +290,9 @@ h2 a:focus {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s; }
 
+/*
+Document style
+*/
 html {
   font-family: "CharlevoixProLight";
   color: #222;
@@ -342,9 +360,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* Vertical center alignment */
-  justify-content: center;
-  /* Horizontal center alignment */ }
+  justify-content: center; }
 
 .menu_home ul {
   height: auto;
@@ -377,7 +393,9 @@ li a {
 .menu_icon:after {
   clear: both; }
 
-/* For IE 6/7 (trigger hasLayout) */
+/*
+For IE 6/7 (trigger hasLayout)
+*/
 .menu_icon {
   zoom: 1; }
 
@@ -515,9 +533,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Vertical center alignment */
   justify-content: center;
-  /* Horizontal center alignment */
   word-wrap: break-word; }
 
 .title {
@@ -527,9 +543,7 @@ h1 {
   margin: 0;
   flex-direction: column;
   align-items: center;
-  /* Vertical center alignment */
-  justify-content: center;
-  /* Horizontal center alignment */ }
+  justify-content: center; }
 
 #contactMe {
   font-weight: bold;
@@ -571,6 +585,9 @@ h6 {
 .title_colored {
   color: #2F9DA8; }
 
+/*
+Work Images STYLE
+*/
 .work_image {
   max-height: 100vh; }
 
@@ -587,7 +604,9 @@ caption {
   width: 100%;
   overflow: hidden; }
 
-/* Image Box Style */
+/*
+Image Box Style
+*/
 #mainwrapper .box {
   height: 100vh;
   max-height: 100vh;
@@ -595,9 +614,7 @@ caption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Vertical center alignment */
-  justify-content: center;
-  /* Horizontal center alignment */ }
+  justify-content: center; }
 
 #mainwrapper .box img {
   position: absolute;
@@ -612,7 +629,9 @@ caption {
 #mainwrapper .box .caption a:hover {
   color: gainsboro; }
 
-/* Caption  Style */
+/*
+Caption  Style
+ */
 #mainwrapper .box .caption {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -649,6 +668,9 @@ img.social_icon {
   height: 30px;
   width: 30px; }
 
+/*
+Form style
+*/
 .contact_wrap {
   height: 90%;
   max-height: 90%;
@@ -751,6 +773,9 @@ form {
       outline: none;
       background: #2DAC87; }
 
+/*
+Footer style
+*/
 footer {
   background-color: #BB4481;
   height: 10vh;
@@ -836,6 +861,9 @@ Media Queries for Responsive Design.
 ========================================================================== */
 @media only screen and (min-width: 28.75em) {
   /* Style adjustments for viewports that meet the condition */
+  /*
+  Document style
+  */
   img.social_icon {
     height: 40px;
     width: 40px; }
@@ -853,6 +881,21 @@ Media Queries for Responsive Design.
     padding-right: 6vh; } }
 @media only screen and (min-width: 60em) {
   /* Style adjustments for viewports that meet the condition */
+  /*
+   String Replace
+  */
+  /*
+  Font Face
+  */
+  /*
+  Grid
+  */
+  /*
+  Pages layout
+  */
+  /*
+  Transition Ease
+  */
   /*
   * Fonts
   */
@@ -1056,6 +1099,9 @@ Media Queries for Responsive Design.
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s; }
 
+  /*
+  Document style
+  */
   html {
     font-size: 100%;
     overflow-x: hidden;

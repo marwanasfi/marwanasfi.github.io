@@ -1,87 +1,87 @@
 h2 a {
-  position: relative;
-  display: inline-block;
-  margin: 15px;
-  outline: none;
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 1px;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); }
-
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
 h2 a:hover,
 h2 a:focus {
-  outline: none;
-  color: #fff; }
-
+    outline: none;
+    color: #fff;
+}
 .job-effect a {
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  perspective: 800px;
-  width: 200px; }
-
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+    width: 200px;
+}
 .job-effect a span {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  background: #9A396A;
-  -webkit-transition: -webkit-transform 0.4s, background 0.4s;
-  -moz-transition: -moz-transform 0.4s, background 0.4s;
-  transition: transform 0.4s, background 0.4s;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: 50% 50% -100px;
-  -moz-transform-origin: 50% 50% -100px;
-  transform-origin: 50% 50% -100px; }
-
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: #9A396A;
+    -webkit-transition: -webkit-transform 0.4s, background 0.4s;
+    -moz-transition: -moz-transform 0.4s, background 0.4s;
+    transition: transform 0.4s, background 0.4s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50% -100px;
+    -moz-transform-origin: 50% 50% -100px;
+    transform-origin: 50% 50% -100px;
+}
 .job-effect a span::before {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background: #9A396A;
-  content: attr(data-hover);
-  -webkit-transition: background 0.4s;
-  -moz-transition: background 0.4s;
-  transition: background 0.4s;
-  -webkit-transform: rotateY(90deg);
-  -moz-transform: rotateY(90deg);
-  transform: rotateY(90deg);
-  -webkit-transform-origin: 0 50%;
-  -moz-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  pointer-events: none; }
-
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: #9A396A;
+    content: attr(data-hover);
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    transition: background 0.4s;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    pointer-events: none;
+}
 .job-effect a:hover span,
 .job-effect a:focus span {
-  background: #BB4481;
-  -webkit-transform: rotateY(-90deg);
-  -moz-transform: rotateY(-90deg);
-  transform: rotateY(-90deg); }
-
+    background: #BB4481;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
 .job-effect a:hover span::before,
 .job-effect a:focus span::before {
-  right: 60%;
-  background: #9A396A; }
-
+    right: 60%;
+    background: #9A396A;
+}
 .menu_home a {
-  color: rgba(0, 0, 0, 0.2);
-  text-shadow: none; }
-
+    color: rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
 .menu_home a::before {
-  color: #fff;
-  content: attr(data-hover);
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s; }
-
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
 .menu_home a:hover::before,
 .menu_home a:focus::before {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  transform: scale(0.9);
-  opacity: 0; }
-
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
 /*# sourceMappingURL=effects.css.map */

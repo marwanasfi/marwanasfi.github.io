@@ -1,6 +1,6 @@
-// =============================================================================
-// String Replace
-// =============================================================================
+/*
+ String Replace
+*/
 
 @function str-replace($string, $search, $replace: "") {
 	$index: str-index($string, $search);
@@ -12,9 +12,9 @@
 	@return $string;
 }
 
-// =============================================================================
-// Font Face
-// =============================================================================
+/*
+Font Face
+*/
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
 	$src: null;
@@ -43,18 +43,18 @@
 	}
 }
 
-// =============================================================================
-// Grid
-// =============================================================================
+/*
+Grid
+*/
 
 @mixin grid($column) {
 	  width:(100% / 12) * $column;
 	  margin:0 auto;
 }
 
-// =============================================================================
-// Pages layout
-// =============================================================================
+/*
+Pages layout
+*/
 
 @mixin half_page_left($color) {
 	margin: 0;
@@ -94,7 +94,11 @@
 	background-color:$color;
 
 }
-// Transition Ease
+
+/*
+Transition Ease
+*/
+
 @mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
 	  -webkit-transition: $attr $time $curve;
 	  -moz-transition: $attr $time $curve;

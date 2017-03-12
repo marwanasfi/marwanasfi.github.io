@@ -1,21 +1,21 @@
-
 @import 'mixins';
 @import 'variables';
 @import 'effects';
-///////////////////////////////////////////////////////////////DOCUMENT STYLE///////////////////////////////////////////////////////////////
+
+/*
+Document style
+*/
 
 html {
   font-size: 100%;
   overflow-x: hidden;
   margin:0;padding:0;
 }
-
 article {
   flex-direction: row;
   overflow-x: hidden;
   margin:0;padding:0;
 }
-
 .menu_icon {
   display: none;
 }
@@ -24,7 +24,6 @@ article {
 }
 .left_about {
 	@include half_page_left($blue);
-
 }
 .right_about {
 	@include half_page_right(white);
@@ -56,11 +55,9 @@ h1{
 	line-height: 85%;
 }
 .content {
-
   padding-top: 10vh;
   padding-left: 10vh;
   padding-right: 10vh;
-
 }
 span.my_photo {
   display: block;
@@ -78,18 +75,12 @@ span.my_photo {
   top: 70%;
   transform: translateY(-70%);
 }
-
-
-
 .work_image{
   height: 100vh;
   width: auto;
   margin-left:0;
   padding-left: 0;
-
 }
-
-
  #mainwrapper .box .scale-caption  {
 	width: 45vw;
   height: 100vh;
@@ -100,13 +91,10 @@ span.my_photo {
 #mainwrapper .box .caption p {
   width: 40vw;
 }
-
 img.social_icon {
-
   height: 50px;
   width: 50px;
 }
-
 // Form
 form {
 		  @include grid(7);

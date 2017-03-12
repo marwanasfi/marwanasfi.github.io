@@ -1,6 +1,7 @@
 /*
 * Fonts
 */
+
 /*titles font*/
 @font-face {
   font-family: "Mightype Script";
@@ -12,6 +13,7 @@
 /*
 Design colors
  */
+
 /*
 Images sizes
  */
@@ -23,19 +25,19 @@ h2 a {
   color: #fff;
   text-decoration: none;
   letter-spacing: 1px;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); }
-
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+}
 h2 a:hover,
 h2 a:focus {
   outline: none;
-  color: #fff; }
-
+  color: #fff;
+ }
 .job-effect a {
   -webkit-perspective: 800px;
   -moz-perspective: 800px;
   perspective: 800px;
-  width: 200px; }
-
+  width: 200px;
+ }
 .job-effect a span {
   position: relative;
   display: inline-block;
@@ -49,8 +51,8 @@ h2 a:focus {
   transform-style: preserve-3d;
   -webkit-transform-origin: 50% 50% -100px;
   -moz-transform-origin: 50% 50% -100px;
-  transform-origin: 50% 50% -100px; }
-
+  transform-origin: 50% 50% -100px;
+}
 .job-effect a span::before {
   position: absolute;
   top: 0;
@@ -68,85 +70,85 @@ h2 a:focus {
   -webkit-transform-origin: 0 50%;
   -moz-transform-origin: 0 50%;
   transform-origin: 0 50%;
-  pointer-events: none; }
-
+  pointer-events: none;
+ }
 .job-effect a:hover span,
 .job-effect a:focus span {
   background: #BB4481;
   -webkit-transform: rotateY(-90deg);
   -moz-transform: rotateY(-90deg);
-  transform: rotateY(-90deg); }
-
+  transform: rotateY(-90deg);
+ }
 .job-effect a:hover span::before,
 .job-effect a:focus span::before {
   right: 60%;
-  background: #9A396A; }
-
+  background: #9A396A;
+ }
 .menu_home a {
   color: rgba(0, 0, 0, 0.2);
-  text-shadow: none; }
-
+  text-shadow: none;
+ }
 .menu_home a::before {
   color: #fff;
   content: attr(data-hover);
   position: absolute;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s; }
-
+  transition: transform 0.3s, opacity 0.3s;
+}
 .menu_home a:hover::before,
 .menu_home a:focus::before {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   transform: scale(0.9);
-  opacity: 0; }
-
+  opacity: 0;
+}
 html {
-  font-size: 100%; }
-
+  font-size: 100%;
+}
 article {
-  flex-direction: row; }
-
+  flex-direction: row;
+}
 .left_about {
   width: 50%;
   height: 100vh;
   max-height: 100vh;
   text-align: center;
   float: left;
-  background-color: #9A396A; }
-
+  background-color: #9A396A;
+}
 .right_about {
   width: 50%;
   height: 100vh;
   max-height: 100vh;
   text-align: left;
   float: right;
-  background-color: white; }
-
+  background-color: white;
+}
 .left_work {
   width: 50%;
   height: 100vh;
   max-height: 100vh;
   text-align: center;
   float: left;
-  background-color: gainsboro; }
-
+  background-color: gainsboro;
+}
 .right_work {
   width: 50%;
   height: 100vh;
   max-height: 100vh;
   text-align: left;
   float: right;
-  background-color: white; }
-
+  background-color: white;
+}
 .left_contact {
   width: 50%;
   height: 100vh;
   max-height: 100vh;
   text-align: center;
   float: left;
-  background-color: #474D53; }
-
+  background-color: #474D53;
+}
 .right_contact {
   width: 50%;
   height: 100vh;
@@ -154,11 +156,11 @@ article {
   text-align: left;
   float: right;
   background-color: white;
-  text-align: center; }
-
+  text-align: center;
+}
 h1 {
   font-size: 10em;
   line-height: 85%;
-  padding-top: 20%; }
-
+  padding-top: 20%;
+}
 /*# sourceMappingURL=style_large.css.map */

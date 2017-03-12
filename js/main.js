@@ -1,7 +1,7 @@
-
-/////////////scroll/////////////
+/*
+scroll
+*/
 $(document).ready(function(){
-
 
   function checkWidth() {
     if ($(window).width() < 960) {
@@ -18,13 +18,10 @@ $(document).ready(function(){
       $("#contactMe").attr('href','#contact_anchor');
       $(".fp-auto-height").css({'height':'auto'});
 
-      /////////////content divs height on mobile/////////////
+      /*content divs height on mobile*/
       function Height($elm) {
         var windowHeight = $(window).height();
         var height = $elm.prop('scrollHeight');
-
-
-
 
         if($elm === ".right_work"){
         $elm.css({'height':height/2,'max-height':height});
@@ -42,7 +39,8 @@ $(document).ready(function(){
       Height($(".right_skills"));
       Height($(".right_work"));
       Height($(".right_contact"));
-        /////////////page slide on mobile/////////////
+
+        /*page slide on mobile*/
         $(function() {
           $('a[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -63,7 +61,6 @@ $(document).ready(function(){
 
   checkWidth();
 
-
       // Store the window width
       var windowWidth = $(window).width();
       // Resize Event
@@ -78,16 +75,6 @@ $(document).ready(function(){
 
 
   $('#fullpage').fullpage({
-    //Navigation
-    //menu: '#myMenu',
-    //lockAnchors: false,
-    //anchors:['about', 'skills', 'work','contact'],
-    //navigation: true,
-    //  navigationPosition: 'right',
-    //navigationTooltips: ['Home','About me', 'My skills', 'My work','Contact me','Footer'],
-    //showActiveTooltip: false,
-    //slidesNavigation: true,
-    //  slidesNavPosition: 'bottom',
 
     //Scrolling
     css3: true,
@@ -165,8 +152,9 @@ $(document).on('click', '#skills4', function(){
   $.fn.fullpage.moveTo(3, 0);
 });
 
-
-//////////////mobile menu icon  //////////////////
+/*
+Mobile menu icon
+*/
 
 (function() {
  /* In animations (to close icon) */
@@ -236,8 +224,9 @@ $(document).on('click', '#skills4', function(){
          easing: ease.ease('elastic-out', 2, 0.4)
      });
  }
-
- /* Awesome burger default */
+ /*
+ Awesome burger default
+ */
 
  var pathA = document.getElementById('pathA'),
    pathB = document.getElementById('pathB'),
@@ -303,8 +292,6 @@ $(document).on('click', '#skills4', function(){
  function removeScale(m) {
    m.className = 'menu-icon-wrapper';
  }
-
-
   	/* Awesome burger scaled */
 
   	var pathD = document.getElementById('pathD'),
@@ -343,9 +330,9 @@ $(document).on('click', '#skills4', function(){
 
 })();
 
-
-
-//////////////form //////////////////
+/*
+Form
+*/
 
 // Input Lock
 $('textarea').blur(function () {
