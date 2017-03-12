@@ -6,7 +6,7 @@
   <title>Marwa Nasfi - Web developer</title>
   <meta name="description" content="marwa, nasfi, web, development, html, php, css, sweden, uppsala">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width">
+  <meta name="viewport" content="initial-scale=1,width=device-width">
 
   <meta property="og:site_name " content="Marwa Nasfi - Web developer">
   <meta property="og:title" content="Marwa Nasfi - Web developer">
@@ -264,7 +264,7 @@
                 <h3>Contact form</h3>
                 <p>Or send me a message</p>
                 <div id="form_section">
-                  <form action="https://formspree.io/marwaworkmessages@gmail.com" method="post" >
+                  <form id="contactform" method="post" >
                     <div class="field name-box">
                       <input type="hidden" name="_next" value="https://marwanasfi.github.io/" />
                       <input type="hidden" name="_subject" value="Website contact" />
@@ -282,6 +282,10 @@
                     </div>
                     <input class="button" type="submit" value="Send" />
                   </form>
+                  <script>
+                  var contactform =  document.getElementById('contactform');
+                  contactform.setAttribute('action', '//formspree.io/' + 'marwaworkmessages' + '@' + 'gmail' + '.' + 'com');
+                  </script>
                 </div>
               </div>
             </section>
