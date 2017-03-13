@@ -61,7 +61,6 @@ $('#contactform .field:nth-child(4) input').blur(function () {
         required:true
       },
       _replyto: {
-        required:true,
         // Email will be validated by the built-in "email" rule
         email: true
       },
