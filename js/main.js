@@ -77,7 +77,7 @@ $('#contactform .field:nth-child(4) input').blur(function () {
     },
     // After validation submit the form
     submitHandler: function(form) {
-      form.setAttribute('action', '//formspree.io/' + 'marwaworkmessages' + '@' + 'gmail' + '.' + 'com');
+      form.setAttribute('action', 'https://formspree.io/' + 'marwaworkmessages' + '@' + 'gmail' + '.' + 'com');
       form.submit();
     }
   });
