@@ -61,7 +61,7 @@ header {
     padding: 0;
 }
 .menu_home {
-    display: block;
+    display: block !important;
     font-size: 1.3em;
     width: 100%;
     margin: auto;
@@ -462,7 +462,6 @@ form {
 .error {
   text-align: left;
   color:$pink;
-  font-weight: bold;
   font-size: 1.1em;
 }
 /*
