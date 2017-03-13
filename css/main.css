@@ -746,7 +746,7 @@ form {
           color: white; }
       form .field input[type="text"].focused + label,
       form .field textarea.focused + label {
-        color: #2DAC87; }
+        color: white; }
     form .field:hover label {
       width: 30%;
       background: #474D53;
@@ -772,6 +772,12 @@ form {
     form input[type="submit"]:focus {
       outline: none;
       background: #2DAC87; }
+
+.error {
+  text-align: left;
+  color: #BB4481;
+  font-weight: bold;
+  font-size: 1.1em; }
 
 /*
 Footer style

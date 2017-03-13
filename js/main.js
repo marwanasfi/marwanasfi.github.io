@@ -1,6 +1,91 @@
+
+/*
+Form
+*/
+
+
+// Input Lock
+$('textarea').blur(function () {
+  $('#contactform textarea').each(function () {
+    $this = $(this);
+    if ( this.value != '' ) {
+      $this.addClass('focused');
+      $('textarea + label + span').css({'opacity': 1});
+    }
+    else {
+      $this.removeClass('focused');
+      $('textarea + label + span').css({'opacity': 0});
+    }
+  });
+});
+
+$('#contactform .field:nth-child(2) input').blur(function () {
+  $('#contactform .field:nth-child(2) input').each(function () {
+    $this = $(this);
+    if ( this.value != '' ) {
+      $this.addClass('focused');
+      $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+    }
+    else {
+      $this.removeClass('focused');
+      $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+    }
+  });
+});
+
+$('#contactform .field:nth-child(4) input').blur(function () {
+  $('#contactform .field:nth-child(4) input').each(function () {
+    $this = $(this);
+    if ( this.value != '' ) {
+      $this.addClass('focused');
+      $('.field:nth-child(4) input +  label + span').css({'opacity': 1});
+    }
+    else {
+      $this.removeClass('focused');
+      $('.field:nth-child(4) input + label + span').css({'opacity': 0});
+    }
+  });
+});
+
+
+
+//Form validation
+
+  $('#contactform').validate({
+        errorPlacement: function ($error, $element) {
+            var name = $element.attr("name");
+            $("#error" + name).append($error);
+        },
+    rules: {
+      name: {
+        required:true
+      },
+      _replyto: {
+        required:true,
+        // Email will be validated by the built-in "email" rule
+        email: true
+      },
+      message:{
+        required:true
+      },
+    },
+    // Validation error messages
+    messages: {
+      name: "Please enter your name.",
+      email: "Please enter a valid email address",
+      message: "Please enter your message."
+    },
+    // After validation submit the form
+    submitHandler: function(form) {
+      form.setAttribute('action', '//formspree.io/' + 'marwaworkmessages' + '@' + 'gmail' + '.' + 'com');
+      form.submit();
+    }
+  });
+
 /*
 scroll
 */
+
 $(document).ready(function(){
 
   function checkWidth() {
@@ -329,50 +414,3 @@ Mobile menu icon
   	};
 
 })();
-
-/*
-Form
-*/
-
-// Input Lock
-$('textarea').blur(function () {
-  $('#form_section textarea').each(function () {
-    $this = $(this);
-    if ( this.value != '' ) {
-      $this.addClass('focused');
-      $('textarea + label + span').css({'opacity': 1});
-    }
-    else {
-      $this.removeClass('focused');
-      $('textarea + label + span').css({'opacity': 0});
-    }
-  });
-});
-
-$('#form_section .field:first-child input').blur(function () {
-  $('#form_section .field:first-child input').each(function () {
-    $this = $(this);
-    if ( this.value != '' ) {
-      $this.addClass('focused');
-      $('.field:first-child input + label + span').css({'opacity': 1});
-    }
-    else {
-      $this.removeClass('focused');
-      $('.field:first-child input + label + span').css({'opacity': 0});
-    }
-  });
-});
-
-$('#form_section .field:nth-child(2) input').blur(function () {
-  $('#form_section .field:nth-child(2) input').each(function () {
-    $this = $(this);
-    if ( this.value != '' ) {
-      $this.addClass('focused');
-      $('.field:nth-child(2) input + label + span').css({'opacity': 1});
-    }
-    else {
-      $this.removeClass('focused');
-      $('.field:nth-child(2) input + label + span').css({'opacity': 0});
-    }
-  });
-});

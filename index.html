@@ -129,9 +129,9 @@
               <div class="content">
                 <p> I have a strong talent for both back-end and front-end web development and I always enjoy learning new skills and implementing new ideas.</p>
                 <h5> Front-end</h5>
-                <p>HTML5, CSS3/SaSS, JavaScript, Jekyll, Bootstrap, JQuery, AJAX</p>
+                <p>HTML5, CSS3/SaSS, WordPress, JavaScript, JQuery, AJAX, Jekyll, Bootstrap</p>
                 <h5> Back-end</h5>
-                <p>PHP, WordPress, MySQL</p>
+                <p>PHP, MySQL</p>
                 <h5> Version control</h5>
                 <p>GIT</p>
                 <h5> Design</h5>
@@ -260,11 +260,11 @@
                   <a href="https://twitter.com/Marwa_Nasfi" title="Twitter" target="_blank"><img src="img/twitter.svg" class="social_icon" alt="twitter"></a>
                   <a href="https://se.linkedin.com/in/marwanasfi" title="Linkedin" target="_blank"><img src="img/linkedin.svg" class="social_icon" alt="linkedin"></a>
                 </div>
-
                 <h3>Contact form</h3>
                 <p>Or send me a message</p>
                 <div id="form_section">
                   <form id="contactform" method="post" >
+                     <div id="errorname" class="error"></div>
                     <div class="field name-box">
                       <input type="hidden" name="_next" value="https://marwanasfi.github.io/" />
                       <input type="hidden" name="_subject" value="Website contact" />
@@ -272,20 +272,18 @@
                       <input type="text" id="name" name="name" placeholder="Who Are You?"/>
                       <label for="name" name="nameLabel">Name</label>
                     </div>
+                      <div id="error_replyto" class="error"></div>
                     <div class="field email-box">
                       <input type="text" id="email" name="_replyto" placeholder="name@email.com"/>
                       <label for="email" name="emailLabel">Email</label>
                     </div>
+                    <div id="errormessage" class="error"></div>
                     <div class="field msg-box">
                       <textarea id="msg" rows="4" name="message" placeholder="Your message goes here..."></textarea>
                       <label for="msg" name="msgLabel">Message</label>
                     </div>
                     <input class="button" type="submit" value="Send" />
                   </form>
-                  <script>
-                  var contactform =  document.getElementById('contactform');
-                  contactform.setAttribute('action', '//formspree.io/' + 'marwaworkmessages' + '@' + 'gmail' + '.' + 'com');
-                  </script>
                 </div>
               </div>
             </section>
@@ -311,6 +309,7 @@
         <script src="js/vendor/prefixfree.min.js"></script>
         <script src="js/vendor/segment.min.js"></script>
         <script src="js/vendor/ease.min.js"></script>
+        <script src="js/vendor/jquery.validate.min.js"></script>
         <script src="js/main.js"></script>
         <!-- Google Analytics  -->
         <script>
