@@ -348,9 +348,9 @@ Mobile menu icon
           toCloseIcon = !toCloseIcon;
      }
 
-     document.getElementById('mobile_menu_about').onclick = function() { mobile_menu() ; }
-     document.getElementById('mobile_menu_skills').onclick = function() { mobile_menu() ; }
-     document.getElementById('mobile_menu_work').onclick = function() { mobile_menu() ; }
+     document.getElementById('mobile_menu_about').onclick = function() { mobile_menu() ; };
+     document.getElementById('mobile_menu_skills').onclick = function() { mobile_menu() ; };
+     document.getElementById('mobile_menu_work').onclick = function() { mobile_menu() ; };
      document.getElementById('mobile_menu_contact').onclick = function() { mobile_menu() ; }
 
    } else {
